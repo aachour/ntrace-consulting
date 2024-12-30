@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Subscription;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -60,6 +61,21 @@ class HomeController extends Controller
         return redirect()->route('home')->with('success', 'Your message has been sent successfully.');
 
     }
+
+    public function subscribe(Request $request)
+    {
+        $validateData = $request->validate([
+            'email' => 'required|email|max:255',
+        ]);
+        
+        Subscription::create([
+            'email' => $validateData['email'],
+        ]);
+
+        return redirect()->route('home')->with('success', 'Thank you for your subscription'); 
+    }
+
+
 
     
 }

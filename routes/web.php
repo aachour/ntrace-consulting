@@ -5,6 +5,7 @@ use App\Livewire\Contacts\ContactForm;
 use App\Livewire\Contacts\ContactIndex;
 use App\Livewire\RolesPermissions\PermissionView;
 use App\Livewire\RolesPermissions\RoleView;
+use App\Livewire\Subscribers\SubscriberIndex;
 use App\Livewire\Users\UserView;
 use App\Livewire\Users\UserForm;
 use Illuminate\Support\Facades\Route;
@@ -18,6 +19,7 @@ Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/en/contact', [HomeController::class, 'contactEn'])->name('contact-en');
  
 Route::post('/submit-form', [HomeController::class, 'submitForm'])->name('submitForm');
+Route::post('/subscribe', [HomeController::class, 'subscribe'])->name('subscribe');
 
 
 
@@ -47,6 +49,10 @@ Route::middleware(['auth'])->group(function () {
     Route::group(['prefix' => 'contacts'], function () {
         Route::get('/', ContactIndex::class)->name('contacts');
         Route::get('/view/{id}/{status}', ContactForm::class)->name('contacts.view');
+    });
+
+    Route::group(['prefix' => 'subscribers'], function (){
+        Route::get('/', SubscriberIndex::class)->name('subscribers'); 
     });
 
 
