@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Livewire\RolesPermissions\PermissionView;
 use App\Livewire\RolesPermissions\RoleView;
 use App\Livewire\Users\UserView;
@@ -8,9 +9,12 @@ use Illuminate\Support\Facades\Route;
 use App\Livewire\Auth\Login;
 use App\Livewire\Dashboard;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [HomeController::class, 'index'])->name('index'); 
+
 
 Route::get('/login', Login::class)->name('login');
 Route::middleware(['auth'])->group(function () { 
