@@ -21,7 +21,7 @@
         $title = ucwords(str_replace('-', ' ', $title));
     @endphp
 
-    <title>ntrace-consulting - {{ $title }}</title>
+    <title>Ntrace-Consulting - {{ $title }}</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{url('/assets/images/favicon.ico')}}" />

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>ntrace-consulting | Home</title>
+	<title>Ntrace-Consulting | Home</title>
 	<!-- Stylesheets -->
 	<link href="frontend/css/bootstrap.css" rel="stylesheet">
 	<link href="frontend/css/style.css" rel="stylesheet">
@@ -18,8 +18,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
 		rel="stylesheet">
 
-	<link rel="shortcut icon" href="frontend/images/logo-ntrace.png" type="image/x-icon">
-	<link rel="icon" href="frontend/images/logo-ntrace.png" type="image/x-icon">
+	<link rel="shortcut icon" href="{{asset('frontend/images/logo-ntrace.png')}}" type="image/x-icon">
+	<link rel="icon" href="{{asset('frontend/images/logo-ntrace.png')}}" type="image/x-icon">
 
 	<!-- Responsive -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">

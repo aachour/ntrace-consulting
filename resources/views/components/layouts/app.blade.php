@@ -36,10 +36,10 @@
                             <div class="container-xxl">
                                 <div class="footer-container d-flex align-items-center justify-content-between py-2 flex-md-row flex-column">
                                     <div>
-                                        Starter © <?php echo date('Y'); ?>. All Rights Reserved.
+                                        Ntrace-Consulting © <?php echo date('Y'); ?>. All Rights Reserved.
                                     </div>
                                     <div>
-                                        Designed & Developed by <a href="#" target="_blank" class="fw-semibold">Starter</a>
+                                        Designed & Developed by <a href="#" target="_blank" class="fw-semibold"></a>
                                     </div>
                                 </div>
                             </div>

@@ -78,7 +78,7 @@
 						<span class="feature-block_one-icon">
 							<img src="frontend/images/icons/feature-1.png" alt="" />
 						</span>
-						<h5 class="feature-block_one-title">Cybersécurité</h5>
+						<h5 class="feature-block_one-title">Cyber Sécurité</h5>
 					</div>
 				</div>
 				
@@ -192,7 +192,7 @@
 					<div class="service-block_three">
 						<div class="service-block_three-inner">
 							<span class="service-block_three-icon"><img src="frontend/images/icons/service-11.png" alt="" /></span>
-							<h5 class="service-block_three-heading">Cybersécurité</h5>
+							<h5 class="service-block_three-heading">Cyber Sécurité</h5>
 							<div class="service-block_three-text">Our customers get solutions and business opportunities instead of just projects.</div>
 							<div class="service-block_three-overlay">
 								<div class="service-block_three-color-layer"></div>
