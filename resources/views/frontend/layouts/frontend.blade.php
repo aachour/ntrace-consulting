@@ -34,19 +34,17 @@
  	<!-- Main Header / Header Style Two -->
     <header class="main-header header-style-two">
     	
-		<!-- Header Top -->
+		<!-- Header Top 
 		<div class="header-top_two">
 			<div class="auto-container">
 				<div class="d-flex justify-content-center align-items-center flex-wrap">
 					
-					<!-- Info List -->
 					<ul class="info-list">
 						<li><a href="#"><span class="icon fa-solid fa-phone fa-fw"></span>(678) 345-3456</a></li>
 						<li><a href="#"><span class="icon fa-solid fa-envelope fa-fw"></span>envato@mail.com</a></li>
 						<li><a href="#"><span class="icon fa-solid fa-map fa-fw"></span>380 Albert St, Melbourne, Australia</a></li>
 					</ul>
 					
-					<!-- Social Box -->
 					<ul class="header-social_box">
 						<li><a href="https://www.twitter.com/" class="fa-brands fa-facebook-f fa-fw"></a></li>
 						<li><a href="https://www.facebook.com/" class="fa-brands fa-twitter fa-fw"></a></li>
@@ -56,8 +54,7 @@
 					
 				</div>
 			</div>
-		</div>
-		<!-- End Header Top -->
+		</div>-->
 		
 		<!-- Header Upper -->
         <div class="header-upper">
@@ -82,7 +79,7 @@
 								
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 									<ul class="navigation clearfix">
-                                        <li class="current"><a href="{{route('index')}}">Home</a></li>
+                                        <li class="current"><a href="{{route('home')}}">Home</a></li>
 										<li  class=""><a href="about.html">About Us</a></li>
                                         <li  class=""><a href="services.html">Services</a></li>
 										<li  class=""><a href="contact.html">Contact</a></li>
@@ -193,8 +190,7 @@
 				</div>
             </div>
         </div>
-		<!-- End Sticky Menu -->
-        
+		
 		<!-- Mobile Menu  -->
         <div class="mobile-menu">
             <div class="menu-backdrop"></div>
@@ -213,16 +209,14 @@
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             </nav>
         </div>
-		<!-- End Mobile Menu -->
 	
     </header>
-    <!-- End Main Header -->
-
+    
 
     @yield('content')
 
 
-    	<!-- Footer -->
+    <!-- Footer -->
 	<footer class="main-footer" style="background-image:url(frontend/images/background/pattern-11.png)">
 		<div class="auto-container">
 			<!-- Widgets Section -->
@@ -329,9 +323,8 @@
 			
 		</div>
 	</footer>
-	<!-- Footer -->
 	
-	<!-- Search Popup -->
+	<!-- Search Popup 
 	<div class="search-popup">
 		<div class="color-layer"></div>
 		<button class="close-search"><span class="fa-solid fa-power-off fa-fw"></span></button>
@@ -342,7 +335,6 @@
 			</div>
 		</form>
 	</div>
-	<!-- End Search Popup -->
 		
 </div>
 <!-- End PageWrapper -->
