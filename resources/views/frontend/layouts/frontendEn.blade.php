@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <title>ntrace-consulting | Home</title>
 <!-- Stylesheets -->
-<link href="frontend/css/bootstrap.css" rel="stylesheet">
-<link href="frontend/css/style.css" rel="stylesheet">
-<link href="frontend/css/responsive.css" rel="stylesheet">
+<link href="{{asset('frontend/css/bootstrap.css')}}" rel="stylesheet">
+<link href="{{asset('frontend/css/style.css')}}" rel="stylesheet">
+<link href="{{asset('frontend/css/responsive.css')}}" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -14,8 +14,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-<link rel="shortcut icon" href="frontend/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="frontend/images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="{{asset('frontend/images/logo-ntrace.png')}}" type="image/x-icon">
+<link rel="icon" href="{{asset('frontend/images/logo-ntrace.png')}}" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -61,7 +61,7 @@
             <div class="auto-container">
 				<div class="inner-container d-flex">
 					<!-- Logo Box -->
-					<div class="logo"><a href="index.html"><img src="frontend/images/logo-3.png" alt="" title=""></a></div>
+					<div class="logo"><a href="{{route('home-en')}}"><img src="{{asset('frontend/images/logo-ntrace.png')}}" alt="" title=""></a></div>
 					
 					<!-- Upper Right -->
 					<div class="upper-right">
@@ -79,10 +79,10 @@
 								
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 									<ul class="navigation clearfix">
-                                        <li class="current"><a href="{{route('home-en')}}">Home</a></li>
+                                        <li class="{{ request()->is('en') ? "current" : "" }}"><a href="{{route('home-en')}}">Home</a></li>
 										<li  class=""><a href="#aboutUs">About Us</a></li>
                                         <li  class=""><a href="#services">Services</a></li>
-										<li  class=""><a href="contact.html">Contact Us</a></li>
+										<li  class="{{ request()->is('en/contact*') ? "current" : "" }}" ><a href="{{route('contact-en')}}">Contact Us</a></li>
 									</ul>
 								</div>
 								
@@ -132,14 +132,14 @@
                                 </div>
                                 
 								
-								<div class="button-box">
+								{{-- <div class="button-box">
 									<a class="btn-style-three theme-btn btn-item" href="#">
 										<div class="btn-wrap">
 											<span class="text-one">Get a quote now <i class="fa-solid fa-arrow-right fa-fw"></i></span>
 											<span class="text-two">Get a quote now <i class="fa-solid fa-arrow-right fa-fw"></i></span>
 										</div>
 									</a>
-								</div>
+								</div> --}}
 								
 								<!-- Mobile Navigation Toggler -->
 								<div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
@@ -159,7 +159,7 @@
 				<div class="d-flex justify-content-between align-items-center">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html" title=""><img src="frontend/images/logo-3.png" alt="" title=""></a>
+						<a href="{{route('home-en')}}" title=""><img src="{{asset('frontend/images/logo-ntrace.png')}}" alt="" title=""></a>
 					</div>
 					
 					<!-- Right Col -->
@@ -212,14 +212,14 @@
                                 </ul>
                             </div>
 							
-							<div class="button-box">
+							{{-- <div class="button-box">
 								<a class="btn-style-three theme-btn btn-item" href="#">
 									<div class="btn-wrap">
 										<span class="text-one">Get a quote now <i class="fa-solid fa-arrow-right fa-fw"></i></span>
 										<span class="text-two">Get a quote now <i class="fa-solid fa-arrow-right fa-fw"></i></span>
 									</div>
 								</a>
-							</div>
+							</div> --}}
 							
 							<!-- Mobile Navigation Toggler -->
 							<div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
@@ -237,16 +237,8 @@
             <div class="menu-backdrop"></div>
             <div class="close-btn"><span class="icon flaticon-020-x-mark"></span></div>
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="frontend/images/logo.png" alt="" title=""></a></div>
-				<!-- Search -->
-				<div class="search-box">
-					<form method="post" action="contact.html">
-						<div class="form-group">
-							<input type="search" name="search-field" value="" placeholder="SEARCH HERE" required>
-							<button type="submit"><span class="icon flaticon-001-loupe"></span></button>
-						</div>
-					</form>
-				</div>
+                <div class="nav-logo"><a href="{{route('home-en')}}"><img src="{{asset('frontend/images/logo-ntrace.png')}}" alt="" title=""></a></div>
+				
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             </nav>
         </div>
@@ -257,10 +249,10 @@
     @yield('content')
 
 
-    <!-- Footer -->
+   <!-- Footer -->
 	<footer class="main-footer" style="background-image:url(frontend/images/background/pattern-11.png)">
 		<div class="auto-container">
-			<!-- Widgets Section -->
+			{{-- <!-- Widgets Section -->
 			<div class="widgets-section">
 				<div class="row clearfix">
 					
@@ -356,10 +348,13 @@
 					</div>
 					
 				</div>
-			</div>
+			</div> --}}
 			
 			<div class="footer-bottom">
-				<div class="copyright">2023 &copy; All rights reserved by <a href="#">Themexriver</a></div>
+				<div class="copyright">
+					@php echo date('Y'); @endphp 
+					&copy; All rights reserved by <a href="#">Themexriver</a>
+				</div>
 			</div>
 			
 		</div>
@@ -372,23 +367,23 @@
 <!-- Scroll To Top -->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
 
-<script src="frontend/js/jquery.js"></script>
-<script src="frontend/js/appear.js"></script>
-<script src="frontend/js/owl.js"></script>
-<script src="frontend/js/wow.js"></script>
-<script src="frontend/js/odometer.js"></script>
-<script src="frontend/js/mixitup.js"></script>
-<script src="frontend/js/popper.min.js"></script>
-<script src="frontend/js/parallax-scroll.js"></script>
-<script src="frontend/js/parallax.min.js"></script>
-<script src="frontend/js/bootstrap.min.js"></script>
-<script src="frontend/js/tilt.jquery.min.js"></script>
-<script src="frontend/js/magnific-popup.min.js"></script>
+<script src="{{asset('frontend/js/jquery.js')}}"></script>
+<script src="{{asset('frontend/js/appear.js')}}"></script>
+<script src="{{asset('frontend/js/owl.js')}}"></script>
+<script src="{{asset('frontend/js/wow.js')}}"></script>
+<script src="{{asset('frontend/js/odometer.js')}}"></script>
+<script src="{{asset('frontend/js/mixitup.js')}}"></script>
+<script src="{{asset('frontend/js/popper.min.js')}}"></script>
+<script src="{{asset('frontend/js/parallax-scroll.js')}}"></script>
+<script src="{{asset('frontend/js/parallax.min.js')}}"></script>
+<script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('frontend/js/tilt.jquery.min.js')}}"></script>
+<script src="{{asset('frontend/js/magnific-popup.min.js')}}"></script>
 
-<script src="frontend/js/script.js"></script>
+<script src="{{asset('frontend/js/script.js')}}"></script>
 
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="frontend/js/respond.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js')}}"></script><![endif]-->
+<!--[if lt IE 9]><script src="{{asset('frontend/js/respond.js')}}"></script><![endif]-->
 
 </body>
 </html>

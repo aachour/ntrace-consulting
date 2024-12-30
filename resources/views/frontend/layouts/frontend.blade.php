@@ -14,8 +14,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-<link rel="shortcut icon" href="frontend/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="frontend/images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="frontend/images/logo-ntrace.png" type="image/x-icon">
+<link rel="icon" href="frontend/images/logo-ntrace.png" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -61,9 +61,9 @@
             <div class="auto-container">
 				<div class="inner-container d-flex">
 					<!-- Logo Box -->
-					<div class="logo"><a href="index.html"><img src="frontend/images/logo-3.png" alt="" title=""></a></div>
+					<div class="logo"><a href="{{route('home')}}"><img src="frontend/images/logo-ntrace.png" alt="" title=""></a></div>
 					
-					<!-- Upper Right -->
+					<!-- Upper Right -->	
 					<div class="upper-right">
 						<div class="nav-outer d-flex justify-content-between align-items-center flex-wrap">
 						
@@ -79,10 +79,10 @@
 								
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 									<ul class="navigation clearfix">
-                                        <li class="current"><a href="{{route('home')}}">Page d'accueil</a></li>
+                                        <li class="{{ request()->is('/') ? "current" : "" }}"><a href="{{route('home')}}">Page d'accueil</a></li>
 										<li  class=""><a href="#aboutUs">À Propos De Nous</a></li>
                                         <li  class=""><a href="#services">Domaines d'expertise</a></li>
-										<li  class=""><a href="contact.html">Contactez-nous</a></li>
+										<li  class="{{ request()->is('contact*') ? "current" : "" }}"><a href="{{route('contact')}}">Contactez-nous</a></li>
 									</ul>
 								</div>
 								
@@ -132,14 +132,14 @@
                                 </div>
                                 
 								
-								<div class="button-box">
+								{{-- <div class="button-box">
 									<a class="btn-style-three theme-btn btn-item" href="#">
 										<div class="btn-wrap">
 											<span class="text-one">Get a quote now <i class="fa-solid fa-arrow-right fa-fw"></i></span>
 											<span class="text-two">Get a quote now <i class="fa-solid fa-arrow-right fa-fw"></i></span>
 										</div>
 									</a>
-								</div>
+								</div> --}}
 								
 								<!-- Mobile Navigation Toggler -->
 								<div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
@@ -159,7 +159,7 @@
 				<div class="d-flex justify-content-between align-items-center">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html" title=""><img src="frontend/images/logo-3.png" alt="" title=""></a>
+						<a href="{{route('home')}}" title=""><img src="frontend/images/logo-ntrace.png" alt="" title=""></a>
 					</div>
 					
 					<!-- Right Col -->
@@ -212,14 +212,14 @@
                                 </ul>
                             </div>
 							
-							<div class="button-box">
+							{{-- <div class="button-box">
 								<a class="btn-style-three theme-btn btn-item" href="#">
 									<div class="btn-wrap">
 										<span class="text-one">Get a quote now <i class="fa-solid fa-arrow-right fa-fw"></i></span>
 										<span class="text-two">Get a quote now <i class="fa-solid fa-arrow-right fa-fw"></i></span>
 									</div>
 								</a>
-							</div>
+							</div> --}}
 							
 							<!-- Mobile Navigation Toggler -->
 							<div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
@@ -237,16 +237,7 @@
             <div class="menu-backdrop"></div>
             <div class="close-btn"><span class="icon flaticon-020-x-mark"></span></div>
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="frontend/images/logo.png" alt="" title=""></a></div>
-				<!-- Search -->
-				<div class="search-box">
-					<form method="post" action="contact.html">
-						<div class="form-group">
-							<input type="search" name="search-field" value="" placeholder="SEARCH HERE" required>
-							<button type="submit"><span class="icon flaticon-001-loupe"></span></button>
-						</div>
-					</form>
-				</div>
+                <div class="nav-logo"><a href="{{route('home')}}"><img src="frontend/images/logo-ntrace.png" alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             </nav>
         </div>
@@ -260,7 +251,7 @@
     <!-- Footer -->
 	<footer class="main-footer" style="background-image:url(frontend/images/background/pattern-11.png)">
 		<div class="auto-container">
-			<!-- Widgets Section -->
+			{{-- <!-- Widgets Section -->
 			<div class="widgets-section">
 				<div class="row clearfix">
 					
@@ -356,10 +347,13 @@
 					</div>
 					
 				</div>
-			</div>
+			</div> --}}
 			
 			<div class="footer-bottom">
-				<div class="copyright">2023 &copy; All rights reserved by <a href="#">Themexriver</a></div>
+				<div class="copyright">
+					@php echo date('Y'); @endphp 
+					&copy; All rights reserved by <a href="#">Themexriver</a>
+				</div>
 			</div>
 			
 		</div>
