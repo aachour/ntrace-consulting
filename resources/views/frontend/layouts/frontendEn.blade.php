@@ -79,10 +79,10 @@
 								
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 									<ul class="navigation clearfix">
-                                        <li class="current"><a href="{{route('home')}}">Page d'accueil</a></li>
-										<li  class=""><a href="#aboutUs">À Propos De Nous</a></li>
-                                        <li  class=""><a href="#services">Domaines d'expertise</a></li>
-										<li  class=""><a href="contact.html">Contactez-nous</a></li>
+                                        <li class="current"><a href="{{route('home-en')}}">Home</a></li>
+										<li  class=""><a href="#aboutUs">About Us</a></li>
+                                        <li  class=""><a href="#services">Services</a></li>
+										<li  class=""><a href="contact.html">Contact Us</a></li>
 									</ul>
 								</div>
 								
@@ -365,17 +365,6 @@
 		</div>
 	</footer>
 	
-	<!-- Search Popup 
-	<div class="search-popup">
-		<div class="color-layer"></div>
-		<button class="close-search"><span class="fa-solid fa-power-off fa-fw"></span></button>
-		<form method="post" action="blog.html">
-			<div class="form-group">
-				<input type="search" name="search-field" value="" placeholder="Search Here" required="">
-				<button class="fa-solid fa-paper-plane fa-fw" type="submit"></button>
-			</div>
-		</form>
-	</div>
 		
 </div>
 <!-- End PageWrapper -->
