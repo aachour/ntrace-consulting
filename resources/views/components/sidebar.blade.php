@@ -39,6 +39,15 @@
             </a>
         </li>
 
+        <li class="menu-item {{ request()->is('subscribers*') ? "active" : "" }}">
+            <a href="{{ route('subscribers') }}" class="menu-link">
+				<i class="menu-icon tf-icons ti ti-user-plus"></i>
+                <div data-i18n="Subscribers">Subscribers</div>
+            </a>
+        </li>
+
+
+
 		{{-- @canany(['role-list', 'permission-list', 'user-list'])
         <li class="menu-item {{ request()->is('roles') || request()->is('permissions') || request()->is('users*') || request()->is('region*') ? "active open" : "" }}">
 
