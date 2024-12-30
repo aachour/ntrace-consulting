@@ -4,8 +4,9 @@
 	<div class="app-brand demo">
 		<a href="{{url('dashboard')}}" class="app-brand-link">
 			<span class="app-brand-logo demo">
+				<img src="{{asset('frontend/images/logo-ntrace.png')}}" alt="">
             </span>
-            <span class="app-brand-text demo menu-text fw-bold">Ntrace-Co</span>
+            <span class="app-brand-text menu-text fw-bold">Ntrace-Consulting</span>
 		</a>
 
 		<a id="toggleButton" href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
