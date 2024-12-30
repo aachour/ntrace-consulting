@@ -5,7 +5,7 @@
 		<a href="{{url('dashboard')}}" class="app-brand-link">
 			<span class="app-brand-logo demo">
             </span>
-            <span class="app-brand-text demo menu-text fw-bold">Starter</span>
+            <span class="app-brand-text demo menu-text fw-bold">Ntrace-Co</span>
 		</a>
 
 		<a id="toggleButton" href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
@@ -23,6 +23,19 @@
             <a href="{{ route('dashboard') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-smart-home"></i>
                 <div data-i18n="Dashboard">Dashboard</div>
+            </a>
+        </li>
+
+		@php
+        $messages = count(\App\Models\Contact::where('status',0)->get());  
+       @endphp
+
+
+        <li class="menu-item {{ request()->is('contacts*') ? "active" : "" }}">
+            <a href="{{ route('contacts') }}" class="menu-link">
+				<i class="menu-icon tf-icons ti ti-message"></i>
+                <div data-i18n="Messages">Messages</div>
+				<div class="badge bg-label-primary rounded-pill ms-auto">{{$messages}}</div>
             </a>
         </li>
 

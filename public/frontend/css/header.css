@@ -836,13 +836,13 @@
     -ms-transform: skewX(25deg);
     -o-transform: skewX(25deg);
     transform: skewX(25deg);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#7114EF), to(#1475F7));
-    background-image: -webkit-linear-gradient(to left, #7114EF, #1475F7);
-    background-image: -moz-linear-gradient(to left, #7114EF, #1475F7);
-    background-image: -ms-linear-gradient(to left, #7114EF, #1475F7);
-    background-image: -o-linear-gradient(to left, #7114EF, #1475F7);
-    background-image: linear-gradient(to left, #7114EF, #1475F7);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#7114EF', endColorStr='#1475F7');
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#010333), to(#2642FF));
+    background-image: -webkit-linear-gradient(to left, #010333, #2642FF);
+    background-image: -moz-linear-gradient(to left, #010333, #2642FF);
+    background-image: -ms-linear-gradient(to left, #010333, #2642FF);
+    background-image: -o-linear-gradient(to left, #010333, #2642FF);
+    background-image: linear-gradient(to left, #010333, #2642FF);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#010333', endColorStr='#2642FF');
 }
 
 .header-style-two .logo:before{
@@ -858,13 +858,13 @@
     -ms-transform: skewX(25deg);
     -o-transform: skewX(25deg);
     transform: skewX(25deg);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#7114EF), to(#1475F7));
-    background-image: -webkit-linear-gradient(to left, #7114EF, #1475F7);
-    background-image: -moz-linear-gradient(to left, #7114EF, #1475F7);
-    background-image: -ms-linear-gradient(to left, #7114EF, #1475F7);
-    background-image: -o-linear-gradient(to left, #7114EF, #1475F7);
-    background-image: linear-gradient(to left, #7114EF, #1475F7);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#7114EF', endColorStr='#1475F7');
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#010333), to(#2642FF));
+    background-image: -webkit-linear-gradient(to left, #010333, #2642FF);
+    background-image: -moz-linear-gradient(to left, #010333, #2642FF);
+    background-image: -ms-linear-gradient(to left, #010333, #2642FF);
+    background-image: -o-linear-gradient(to left, #010333, #2642FF);
+    background-image: linear-gradient(to left, #010333, #2642FF);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#010333', endColorStr='#2642FF');
 }
 
 .header-style-two .logo:after{
