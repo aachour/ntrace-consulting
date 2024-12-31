@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
+use App\Models\Subscription;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -25,6 +27,55 @@ class HomeController extends Controller
     {
         return view('frontend.contact-en');
     }
+
+    public function submitForm(Request $request)
+    {
+
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'phone' => 'required',
+            'subject' => 'nullable|string',
+            'message' => 'required|string',
+        ]);
+
+        Contact::create([
+            'name' => $validatedData['name'],
+            'phone' => $validatedData['phone'],
+            'email' => $validatedData['email'],
+            'subject' => $validatedData['subject'],
+            'message' => $validatedData['message'],
+            'status' => 0,
+        ]);
+
+        // // Redirect to home with a success message
+        // if (request()->is('contact')) {
+        //     return redirect()->route('home')->with('success', 'Your message has been sent successfully.');
+        // }
+    
+        // // Check if the current path is '/en/contact'
+        // if (request()->is('en/contact')) {
+        //     return redirect('/en');
+        // }    
+
+        return redirect()->route('home')->with('success', 'Your message has been sent successfully.');
+
+    }
+
+    public function subscribe(Request $request)
+    {
+        $validateData = $request->validate([
+            'email' => 'required|email|max:255',
+        ]);
+        
+        Subscription::create([
+            'email' => $validateData['email'],
+        ]);
+
+        return redirect()->route('home')->with('success', 'Thank you for your subscription'); 
+    }
+
+
 
     
 }

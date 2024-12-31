@@ -4,8 +4,9 @@
 	<div class="app-brand demo">
 		<a href="{{url('dashboard')}}" class="app-brand-link">
 			<span class="app-brand-logo demo">
+				<img src="{{asset('frontend/images/logo-ntrace.png')}}" alt="">
             </span>
-            <span class="app-brand-text demo menu-text fw-bold">Starter</span>
+            <span class="app-brand-text menu-text fw-bold">Ntrace-Consulting</span>
 		</a>
 
 		<a id="toggleButton" href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
@@ -25,6 +26,28 @@
                 <div data-i18n="Dashboard">Dashboard</div>
             </a>
         </li>
+
+		@php
+        $messages = count(\App\Models\Contact::where('status',0)->get());  
+       @endphp
+
+
+        <li class="menu-item {{ request()->is('contacts*') ? "active" : "" }}">
+            <a href="{{ route('contacts') }}" class="menu-link">
+				<i class="menu-icon tf-icons ti ti-message"></i>
+                <div data-i18n="Messages">Messages</div>
+				<div class="badge bg-label-primary rounded-pill ms-auto">{{$messages}}</div>
+            </a>
+        </li>
+
+        <li class="menu-item {{ request()->is('subscribers*') ? "active" : "" }}">
+            <a href="{{ route('subscribers') }}" class="menu-link">
+				<i class="menu-icon tf-icons ti ti-user-plus"></i>
+                <div data-i18n="Subscribers">Subscribers</div>
+            </a>
+        </li>
+
+
 
 		{{-- @canany(['role-list', 'permission-list', 'user-list'])
         <li class="menu-item {{ request()->is('roles') || request()->is('permissions') || request()->is('users*') || request()->is('region*') ? "active open" : "" }}">

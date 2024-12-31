@@ -21,10 +21,10 @@
         $title = ucwords(str_replace('-', ' ', $title));
     @endphp
 
-    <title>ntrace-consulting - {{ $title }}</title>
+    <title>Ntrace-Consulting - {{ $title }}</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{url('/assets/images/favicon.ico')}}" />
+    <link rel="icon" type="image/x-icon" href="{{asset('frontend/images/logo-ntrace.png')}}" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

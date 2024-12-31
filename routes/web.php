@@ -1,8 +1,11 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Livewire\Contacts\ContactForm;
+use App\Livewire\Contacts\ContactIndex;
 use App\Livewire\RolesPermissions\PermissionView;
 use App\Livewire\RolesPermissions\RoleView;
+use App\Livewire\Subscribers\SubscriberIndex;
 use App\Livewire\Users\UserView;
 use App\Livewire\Users\UserForm;
 use Illuminate\Support\Facades\Route;
@@ -13,7 +16,11 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/en', [HomeController::class, 'homeEn'])->name('home-en'); 
 
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact'); 
-Route::get('/en/contact', [HomeController::class, 'contactEn'])->name('contact-en'); 
+Route::get('/en/contact', [HomeController::class, 'contactEn'])->name('contact-en');
+ 
+Route::post('/submit-form', [HomeController::class, 'submitForm'])->name('submitForm');
+Route::post('/subscribe', [HomeController::class, 'subscribe'])->name('subscribe');
+
 
 
 Route::get('/login', Login::class)->name('login');
@@ -34,5 +41,19 @@ Route::middleware(['auth'])->group(function () {
     //     Route::get('/edit/{id}', UserForm::class)->name('users.edit');
     //     Route::get('/view/{id}/{status}', UserForm::class)->name('users.view');
     // });
+
+
+    // |--------------------------------------------------------------------------
+    // |Contact 
+    // |--------------------------------------------------------------------------
+    Route::group(['prefix' => 'contacts'], function () {
+        Route::get('/', ContactIndex::class)->name('contacts');
+        Route::get('/view/{id}/{status}', ContactForm::class)->name('contacts.view');
+    });
+
+    Route::group(['prefix' => 'subscribers'], function (){
+        Route::get('/', SubscriberIndex::class)->name('subscribers'); 
+    });
+
 
 });

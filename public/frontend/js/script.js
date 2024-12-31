@@ -625,27 +625,27 @@
 	
 	
 	//Contact Form Validation
-	if($('#contact-form').length){
-		$('#contact-form').validate({
-			rules: {
-				username: {
-					required: true
-				},
-				phone: {
-					required: true
-				},
-				services: {
-					required: true
-				},
-				email: {
-					required: true
-				},
-				message: {
-					required: true
-				}
-			}
-		});
-	}
+	// if($('#contact-form').length){
+	// 	$('#contact-form').validate({
+	// 		rules: {
+	// 			username: {
+	// 				required: true
+	// 			},
+	// 			phone: {
+	// 				required: true
+	// 			},
+	// 			services: {
+	// 				required: true
+	// 			},
+	// 			email: {
+	// 				required: true
+	// 			},
+	// 			message: {
+	// 				required: true
+	// 			}
+	// 		}
+	// 	});
+	// }
 	
 	
 	
