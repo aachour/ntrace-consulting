@@ -206,30 +206,21 @@
 						<span class="service-block_three-icon"><img src="frontend/images/icons/service-11.png"
 								alt="" /></span>
 						<h5 class="service-block_three-heading">Cyber Sécurité</h5>
-						<div class="service-block_three-text">Notre réseau d’experts en cybersécurité accompagne les entreprises .</div>
-						<div class="service-block_three-overlay">
-							<div class="service-block_three-color-layer"></div>
-							<span class="service-block_three-icon-two"><img src="frontend/images/icons/service-11-1.png"
-									alt="" /></span>
-							<h5 class="service-block_three-heading alternate">Cyber Sécurité
-							</h5>
-							<a class="service-block_three-learn" href="#" 
+						<a class="service-block_three-learn" href="#" 
 							data-service="Cyber Sécurité"
 							data-description="Notre réseau d’experts en cybersécurité accompagne les entreprises dans l’implémentation et l’intégration de solutions de sécurité avancées, notamment :											
-												CyberArk
-												Wallix
-												HashiCorp
-												Nous proposons également des services complets en sécurité réseau, ainsi que des solutions spécialisées en cybersécurité, incluant :		
-												Les centres opérationnels de sécurité (SOC)
-												Les systèmes de gestion des événements et des informations de sécurité (SIEM)
-												Active Directory
-												SailPoint
-												Et d’autres solutions adaptées aux besoins spécifiques de nos clients.
-												Nos services visent à renforcer la sécurité, l’efficacité et la conformité des systèmes de gestion des identités,
-												tout en optimisant les processus d’accès et d’autorisation au sein des organisations et en assurant une réponse proactive et efficace face aux défis de la cybersécurité."
-							>
-							Apprendre encore plus</a>
-						</div>
+							CyberArk
+							Wallix
+							HashiCorp
+							Nous proposons également des services complets en sécurité réseau, ainsi que des solutions spécialisées en cybersécurité, incluant :		
+							Les centres opérationnels de sécurité (SOC)
+							Les systèmes de gestion des événements et des informations de sécurité (SIEM)
+							Active Directory
+							SailPoint
+							Et d’autres solutions adaptées aux besoins spécifiques de nos clients.
+							Nos services visent à renforcer la sécurité, l’efficacité et la conformité des systèmes de gestion des identités,
+							tout en optimisant les processus d’accès et d’autorisation au sein des organisations et en assurant une réponse proactive et efficace face aux défis de la cybersécurité."
+							><h6>En savoir plus</h6></a>
 					</div>
 				</div>
 

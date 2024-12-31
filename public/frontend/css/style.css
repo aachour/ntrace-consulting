@@ -2893,6 +2893,7 @@ button.modal-action:hover {
 	position:relative;
 	text-align:center;
 	padding:0px 20px 40px;
+	height:300px !important;
 }
 
 .service-block_three-inner:before{
@@ -2936,9 +2937,9 @@ button.modal-action:hover {
     background: linear-gradient(to top left, var(--color-thirtythree) 0%, var(--color-thirtytwo) 100%);
 }
 
-.service-block_three-inner:hover .service-block_three-icon{
+/* .service-block_three-inner:hover .service-block_three-icon{
 	opacity:0;
-}
+} */
 
 .service-block_three-heading{
 	position:relative;
