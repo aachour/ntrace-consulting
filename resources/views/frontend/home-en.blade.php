@@ -2,6 +2,19 @@
 
 @section('content')
 
+@if (session('success'))
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		Swal.fire({
+			title: 'Success!',
+			text: "{{ session('success') }}",
+			icon: 'success',
+			confirmButtonText: 'OK'
+		});
+	});
+</script>
+@endif
+
 <!-- Main Slider -->
 <section class="slider-two">
 	<div class="single-item-carousel owl-carousel owl-theme">
@@ -199,15 +212,8 @@
 						<span class="service-block_three-icon"><img src="frontend/images/icons/service-11.png"
 								alt="" /></span>
 						<h5 class="service-block_three-heading">Cyber Security</h5>
-						<div class="service-block_three-text">Our network of cybersecurity experts supports companies.</div>
-						<div class="service-block_three-overlay">
-							<div class="service-block_three-color-layer"></div>
-							<span class="service-block_three-icon-two"><img src="frontend/images/icons/service-11-1.png"
-									alt="" /></span>
-							<h5 class="service-block_three-heading alternate">Cyber Security
-							</h5>
-							<a class="service-block_three-learn" href="#" data-service="Cyber Security"
-								data-description="Our network of cybersecurity experts supports companies in the implementation and integration of advanced security solutions, including:
+						<a class="service-block_three-learn" href="#" data-service="Cyber Security"
+							data-description="Our network of cybersecurity experts supports companies in the implementation and integration of advanced security solutions, including:
 													CyberArk
 													Wallix
 													HashiCorp
@@ -219,8 +225,8 @@
 													And other solutions tailored to our customers' specific needs.
 													Our services aim to strengthen the security, efficiency and compliance of identity management systems,
 													while optimizing access and authorization processes within organizations and ensuring a proactive and effective response to cybersecurity challenges.">
-								Learn More</a>
-						</div>
+							Learn More</a>
+
 					</div>
 				</div>
 
@@ -230,25 +236,16 @@
 						<span class="service-block_three-icon"><img src="frontend/images/icons/service-9.png"
 								alt="" /></span>
 						<h5 class="service-block_three-heading">Network</h5>
-						<div class="service-block_three-text">Our network services aim to provide reliable.</div>
-						<div class="service-block_three-overlay">
-							<div class="service-block_three-color-layer"></div>
-							<span class="service-block_three-icon-two"><img src="frontend/images/icons/service-9-1.png"
-									alt="" /></span>
-							<h5 class="service-block_three-heading alternate">Network
-							</h5>
-							<a class="service-block_three-learn" href="#" 
-							data-service="Network"
+						<a class="service-block_three-learn" href="#" data-service="Network"
 							data-description="Our network services aim to provide reliable, high-performance and secure solutions to meet the growing connectivity and communication needs of businesses.
 											We operate in the following areas:
 											Network design and optimization: Analysis of needs, implementation of scalable and optimized network architectures to ensure smooth and efficient connectivity.
 											Network security: Implementation of firewalls, VPNs, network segmentation and other measures to ensure protection against external and internal threats.
 											Network management and monitoring: Proactive monitoring, performance management and incident resolution to maintain maximum availability.
 											Infrastructure modernization: Migration to advanced technologies such as software-defined networks (SDN) and integration of cloud solutions for increased flexibility.
-											Our experts are committed to supporting companies in the transformation and management of their network infrastructures, ensuring optimal performance and enhanced security."
-							>
+											Our experts are committed to supporting companies in the transformation and management of their network infrastructures, ensuring optimal performance and enhanced security.">
 							Learn More</a>
-						</div>
+
 					</div>
 				</div>
 
@@ -258,25 +255,17 @@
 						<span class="service-block_three-icon"><img src="frontend/images/icons/service-10.png"
 								alt="" /></span>
 						<h5 class="service-block_three-heading">Project Management</h5>
-						<div class="service-block_three-text">Our experienced project managers play a key role in the success.</div>
-						<div class="service-block_three-overlay">
-							<div class="service-block_three-color-layer"></div>
-							<span class="service-block_three-icon-two"><img src="frontend/images/icons/service-10-1.png"
-									alt="" /></span>
-							<h5 class="service-block_three-heading alternate">Project Management</h5>
-									<a class="service-block_three-learn" href="#" 
-									data-service="Project Management"
-									data-description="Our experienced project managers play a key role in the success of our clients’ strategic and operational initiatives.
+						<a class="service-block_three-learn" href="#" data-service="Project Management"
+							data-description="Our experienced project managers play a key role in the success of our clients’ strategic and operational initiatives.
 														We offer project management services tailored to your needs, including:
 														Planning and coordination: Developing detailed project plans, managing resources, and tracking deadlines to ensure smooth and efficient execution.
 														Stakeholder management: Coordinating between internal teams, vendors, and partners to ensure transparent communication and optimal collaboration.
 														Performance monitoring: Implementing key performance indicators (KPIs) and reporting tools to track project progress and ensure alignment with strategic objectives.
 														Risk management: Identifying, assessing, and mitigating risks to minimize contingencies and optimize results.
 														With their expertise and mastery of methodologies such as Agile, Scrum, or Waterfall, our project managers ensure that each initiative is completed on time,
-														while respecting budgets and quality requirements."
-									>
-									Learn More</a>
-						</div>
+														while respecting budgets and quality requirements.">
+							Learn More</a>
+
 					</div>
 				</div>
 
@@ -286,15 +275,8 @@
 						<span class="service-block_three-icon"><img src="frontend/images/icons/service-8.png"
 								alt="" /></span>
 						<h5 class="service-block_three-heading">Software Developement</h5>
-						<div class="service-block_three-text">Our experienced developers, specialized in JavaScript technologies.</div>
-						<div class="service-block_three-overlay">
-							<div class="service-block_three-color-layer"></div>
-							<span class="service-block_three-icon-two"><img src="frontend/images/icons/service-8-1.png"
-									alt="" /></span>
-							<h5 class="service-block_three-heading alternate">Software Developement</h5>
-									<a class="service-block_three-learn" href="#" 
-									data-service="Software Developement"
-									data-description="Our experienced developers, specialized in JavaScript technologies, offer complete solutions to meet the needs of your software development projects.
+						<a class="service-block_three-learn" href="#" data-service="Software Developement"
+							data-description="Our experienced developers, specialized in JavaScript technologies, offer complete solutions to meet the needs of your software development projects.
 														We offer services covering the following areas:
 														Front-end development: Creation of modern, intuitive and responsive user interfaces using recognized frameworks and libraries such as React.js, Angular, and Vue.js.
 														Our front-end developers ensure an optimal user experience that complies with the latest design trends.
@@ -305,8 +287,8 @@
 														Expertise in JavaScript: Development of custom applications, maintenance of existing solutions, performance optimization and implementation of best practices in all projects.
 														Our developers are committed to providing tailor-made solutions, adapted to your specific needs, while respecting deadlines and quality requirements.
 														">
-									Learn More</a>
-						</div>
+							Learn More</a>
+
 					</div>
 				</div>
 
@@ -316,13 +298,8 @@
 						<span class="service-block_three-icon"><img src="frontend/images/icons/service-9.png"
 								alt="" /></span>
 						<h5 class="service-block_three-heading">Artificial Intelligence (AI)</h5>
-						<div class="service-block_three-text">We offer advanced expertise in the field of artificial intelligence.</div>
-						<div class="service-block_three-overlay">
-							<div class="service-block_three-color-layer"></div>
-							<span class="service-block_three-icon-two"><img src="frontend/images/icons/service-9-1.png" alt="" /></span>
-							<h5 class="service-block_three-heading alternate">Artificial Intelligence (AI)</h5>
-							<a class="service-block_three-learn" href="#" 
-							data-service="Artificial Intelligence (AI)"
+
+						<a class="service-block_three-learn" href="#" data-service="Artificial Intelligence (AI)"
 							data-description="c to help our clients take advantage of this transformative technology. Our services include:
 												Large Language Models (LLM): Development and customization of large-scale natural language processing models to meet the specific needs of your applications.
 												AI Model Training: Data collection and preparation, model architecture design, and training to ensure optimal performance in various use cases.
@@ -331,8 +308,8 @@
 												Data collection and management: Acquisition, cleaning and structuring of data necessary for training AI models, while respecting ethical and regulatory standards.
 												Our team of AI experts is committed to providing innovative and tailor-made solutions, adapted to your strategic objectives, while ensuring that the technologies deployed are robust, ethical and efficient.
 												">
-												Learn More</a>
-						</div>
+							Learn More</a>
+
 					</div>
 				</div>
 

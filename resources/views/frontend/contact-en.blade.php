@@ -2,6 +2,19 @@
 
 @section('content')
 
+@if (session('success'))
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		Swal.fire({
+			title: 'Success!',
+			text: "{{ session('success') }}",
+			icon: 'success',
+			confirmButtonText: 'OK'
+		});
+	});
+</script>
+@endif
+
 <!-- Contact One -->
 <section class="contact-one" style="background-image:url(/frontend/images/background/map-1.png)">
 	<div class="auto-container">
@@ -67,7 +80,7 @@
 
 								<div class="col-lg-6 col-md-6 col-sm-12 form-group">
 									<label>Name <span>*</span></label>
-									<input wire:model.defer="name" type="text" id="name" name="name"
+									<input wire:model="name" type="text" id="name" name="name"
 										placeholder="Your Name..." autocomplete="on">
 									@error('name') <span class="text-danger">{{ $message }}</span> @enderror
 
@@ -75,7 +88,7 @@
 
 								<div class="col-lg-6 col-md-6 col-sm-12 form-group">
 									<label>Email <span>*</span></label>
-									<input wire:model.defer="email" type="email" id="email" name="email"
+									<input wire:model="email" type="email" id="email" name="email"
 										placeholder="Your E-mail...">
 									@error('email') <span class="text-danger">{{ $message }}</span> @enderror
 
@@ -83,7 +96,7 @@
 
 								<div class="col-lg-6 col-md-12 col-sm-12 form-group">
 									<label>Phone <span>*</span></label>
-									<input wire:model.defer="phone" type="text" id="phone" name="phone"
+									<input wire:model="phone" type="text" id="phone" name="phone"
 										placeholder="Your Phone Number...">
 									@error('phone') <span class="text-danger">{{ $message }}</span> @enderror
 
@@ -91,13 +104,13 @@
 
 								<div class="col-lg-6 col-md-12 col-sm-12 form-group">
 									<label>Subject</label>
-									<input wire:model.defer="subject" type="text" id="subject" name="subject"
+									<input wire:model="subject" type="text" id="subject" name="subject"
 										placeholder="Subject..." autocomplete="on">
 								</div>
 
 								<div class="col-lg-12 col-md-12 col-sm-12 form-group">
 									<label>Your message <span>*</span></label>
-									<textarea wire:model.defer="message" id="message" name="full_name"
+									<textarea wire:model="message" id="message" name="message"
 										placeholder="Your message" rows="5"></textarea>
 									@error('message') <span class="text-danger">{{ $message }}</span> @enderror
 

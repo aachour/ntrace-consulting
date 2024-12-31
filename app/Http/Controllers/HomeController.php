@@ -54,8 +54,8 @@ class HomeController extends Controller
         // }
     
         // // Check if the current path is '/en/contact'
-        // if (request()->is('en/contact')) {
-        //     return redirect('/en');
+        // if (request()->is('contact-en')) {
+        //     return redirect('home-en')->with('success', 'Your message has been sent successfully.');
         // }    
 
         return redirect()->route('home')->with('success', 'Your message has been sent successfully.');
