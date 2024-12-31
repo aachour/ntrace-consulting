@@ -73,58 +73,50 @@
 
 					<!-- Contact Form -->
 					<div class="contact-form">
-						<form method="post" action="{{ route('submitForm') }}" id="contact-form"
-							enctype="multipart/form-data">
+						<form method="post" id="contact-form">
 							@csrf
 							<div class="row clearfix">
-
 								<div class="col-lg-6 col-md-6 col-sm-12 form-group">
 									<label>Name <span>*</span></label>
-									<input wire:model="name" type="text" id="name" name="name"
-										placeholder="Your Name..." autocomplete="on">
+									<input type="text" id="name" name="name" placeholder="Your Name..."
+										autocomplete="on">
 									@error('name') <span class="text-danger">{{ $message }}</span> @enderror
-
 								</div>
 
 								<div class="col-lg-6 col-md-6 col-sm-12 form-group">
 									<label>Email <span>*</span></label>
-									<input wire:model="email" type="email" id="email" name="email"
-										placeholder="Your E-mail...">
+									<input type="email" id="email" name="email" placeholder="Your E-mail...">
 									@error('email') <span class="text-danger">{{ $message }}</span> @enderror
-
 								</div>
 
 								<div class="col-lg-6 col-md-12 col-sm-12 form-group">
 									<label>Phone <span>*</span></label>
-									<input wire:model="phone" type="text" id="phone" name="phone"
-										placeholder="Your Phone Number...">
+									<input type="text" id="phone" name="phone"
+										placeholder="Your Phone Number ...">
 									@error('phone') <span class="text-danger">{{ $message }}</span> @enderror
-
 								</div>
 
 								<div class="col-lg-6 col-md-12 col-sm-12 form-group">
 									<label>Subject</label>
-									<input wire:model="subject" type="text" id="subject" name="subject"
-										placeholder="Subject..." autocomplete="on">
+									<input type="text" id="subject" name="subject" placeholder="Subject..."
+										autocomplete="on">
 								</div>
 
 								<div class="col-lg-12 col-md-12 col-sm-12 form-group">
 									<label>Your message <span>*</span></label>
-									<textarea wire:model="message" id="message" name="message"
-										placeholder="Your message" rows="5"></textarea>
+									<textarea id="message" name="message" placeholder="Your message"
+										rows="5"></textarea>
 									@error('message') <span class="text-danger">{{ $message }}</span> @enderror
-
 								</div>
 
 								<div class="col-lg-12 col-md-12 col-sm-12 form-group">
-									<button class="btn-style-seven theme-btn" id="form-submit" type="submit">
+									<button class="btn-style-seven theme-btn" id="submit" type="button">
 										<span class="btn-wrap">
-											<span class="text-one">Send Message</span>
-											<span class="text-two">Send Message</span>
+											<span class="text-one">Send Message </span>
+											<span class="text-two">Send Message </span>
 										</span>
 									</button>
 								</div>
-
 							</div>
 						</form>
 					</div>
@@ -149,5 +141,64 @@
 </section>
 <!-- End Map One -->
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+	$(document).ready(function () {
+		$('#submit').on('click', function (e) {
+            e.preventDefault(); 
+
+            var form = $('#contact-form');
+            var formData = form.serialize(); 
+            $.ajax({
+                url: '{{ route('submitForm') }}',
+                type: 'POST',
+                data: formData,
+				headers: {
+					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+				},
+                success: function(response) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Success!',
+                        text: response.message,
+                    }).then(() => {
+                        window.location.href = '{{ route('contact-en') }}'; 
+                    });
+
+              
+                    $('#name').val('');
+                    $('#email').val('');
+                    $('#phone').val('');
+                    $('#subject').val('');
+                    $('#message').val('');
+                },
+                error: function(xhr) {
+                    if (xhr.status === 422) {
+                        var errors = xhr.responseJSON.errors;
+                        var errorMessage = 'Something went wrong.';
+
+                        if (errors.name) errorMessage = errors.name[0];
+                        else if (errors.email) errorMessage = errors.email[0];
+                        else if (errors.phone) errorMessage = errors.phone[0];
+                        else if (errors.message) errorMessage = errors.message[0];
+
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Validation Error',
+                            text: errorMessage,
+                        });
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error',
+							text: xhr.responseText,
+                        });
+                    }
+                }
+            });
+        });
+    });
+</script>
 
 @endsection
