@@ -285,8 +285,9 @@
 								<div class="footer-column col-4">
 									<div class="footer-widget logo-widget">
 										<div class="logo">
-											<a href="{{route('home')}}"><img
-													src="{{asset('frontend/images/logo-ntrace.png')}}" alt="" /></a>
+											<a href="{{route('home')}}">
+												<img src="{{asset('frontend/images/logo-ntrace.png')}}" width="85%" />
+											</a>
 										</div>
 										<div class="text">We work with a passion of taking challenges and creating new
 											ones in advertising sector.</div>
@@ -338,8 +339,8 @@
 
 				<div class="footer-bottom">
 					<div class="copyright">
-						@php echo date('Y'); @endphp
-						&copy; All rights reserved by <a href="#">Themexriver</a>
+						Ntrace Consulting © @php echo date('Y'); @endphp. Tous Droits Réservés.
+						Conçu et Développé par <a href="https://binarycords.com" target="_blank">Binary Cords</a>
 					</div>
 				</div>
 

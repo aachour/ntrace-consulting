@@ -340,10 +340,12 @@
 		$('.four-item-carousel').owlCarousel({
 			//animateOut: 'fadeOut',
     		//animateIn: 'fadeIn',
-			loop:true,
-			margin:30,
+			items: 5, 
+			loop:false,
+			margin:15,
 			nav:true,
-			//autoHeight: true,
+			dots: false,
+			autoHeight: true,
 			smartSpeed: 500,
 			autoplay: 6000,
 			navText: [ '<span class="fa-solid fa-angle-left fa-fw"></span>', '<span class="fa-solid fa-angle-right fa-fw"></span>' ],
@@ -358,10 +360,10 @@
 					items:2
 				},
 				1024:{
-					items:3
+					items:5
 				},
 				1200:{
-					items:4
+					items:5
 				}
 			}
 		});

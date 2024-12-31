@@ -850,22 +850,22 @@ h2{
 h3{
 	line-height:1.3em;
 	font-weight:600;
-	font-size:var(--font-36);
+	font-size:var(--font-32);
 }
 
 h4{
 	line-height:1.4em;
-	font-size:var(--font-24);
+	font-size:var(--font-22);
 }
 
 h5{
 	line-height:1.4em;
-	font-size:var(--font-22);
+	font-size:var(--font-18);
 }
 
 h6{
 	line-height:1.6em;
-	font-size:var(--font-18);
+	font-size:var(--font-16);
 }
 
 /*** 

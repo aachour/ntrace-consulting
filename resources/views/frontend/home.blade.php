@@ -76,9 +76,9 @@
 						<a class="overlay-link" href="service-detail.html"></a>
 						<span class="color-layer"></span>
 						<span class="feature-block_one-icon">
-							<img src="frontend/images/icons/feature-1.png" alt="" />
+							<img src="frontend/images/icons/service-2.png" alt="" />
 						</span>
-						<h5 class="feature-block_one-title">Cyber Sécurité</h5>
+						<h6 class="feature-block_one-title">Cyber Sécurité</h6>
 					</div>
 				</div>
 				
@@ -88,9 +88,9 @@
 						<a class="overlay-link" href="service-detail.html"></a>
 						<span class="color-layer"></span>
 						<span class="feature-block_one-icon">
-							<img src="frontend/images/icons/feature-2.png" alt="" />
+							<img src="frontend/images/icons/service-4.png" alt="" />
 						</span>
-						<h5 class="feature-block_one-title">Réseau</h5>
+						<h6 class="feature-block_one-title">Réseau</h6>
 					</div>
 				</div>
 				
@@ -100,9 +100,9 @@
 						<a class="overlay-link" href="service-detail.html"></a>
 						<span class="color-layer"></span>
 						<span class="feature-block_one-icon">
-							<img src="frontend/images/icons/feature-3.png" alt="" />
+							<img src="frontend/images/icons/service-5.png" alt="" />
 						</span>
-						<h5 class="feature-block_one-title">Intelligence Artificielle</h5>
+						<h6 class="feature-block_one-title">Intelligence Artificielle</h6>
 					</div>
 				</div>
 				
@@ -112,9 +112,9 @@
 						<a class="overlay-link" href="service-detail.html"></a>
 						<span class="color-layer"></span>
 						<span class="feature-block_one-icon">
-							<img src="frontend/images/icons/feature-4.png" alt="" />
+							<img src="frontend/images/icons/service-3.png" alt="" />
 						</span>
-						<h5 class="feature-block_one-title">Chef de Projets</h5>
+						<h6 class="feature-block_one-title">Chef de Projets</h6>
 					</div>
 				</div>
 				
@@ -124,9 +124,9 @@
 						<a class="overlay-link" href="service-detail.html"></a>
 						<span class="color-layer"></span>
 						<span class="feature-block_one-icon">
-							<img src="frontend/images/icons/feature-5.png" alt="" />
+							<img src="frontend/images/icons/service-7.png" alt="" />
 						</span>
-						<h5 class="feature-block_one-title">Développement Logiciel</h5>
+						<h6 class="feature-block_one-title">Développement Logiciel</h6>
 					</div>
 				</div>
 				
@@ -233,8 +233,7 @@
 						</div>
 					</div>
 					
-					
-					
+
 					<!-- Service Block One -->
 					<div class="service-block_three">
 						<div class="service-block_three-inner">
@@ -264,7 +263,6 @@
 							</div>
 						</div>
 					</div>
-					
 					
 				</div>
 			</div>
