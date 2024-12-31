@@ -2,18 +2,7 @@
 
 @section('content')
 
-@if (session('success'))
-<script>
-	document.addEventListener('DOMContentLoaded', function () {
-		Swal.fire({
-			title: 'Success!',
-			text: "{{ session('success') }}",
-			icon: 'success',
-			confirmButtonText: 'OK'
-		});
-	});
-</script>
-@endif
+
 
 <!-- Main Slider -->
 <section class="slider-two">
@@ -84,69 +73,7 @@
 <!-- End Main Slider -->
 
 <!-- Featured One -->
-<section class="featured-one">
-	<div class="auto-container">
-		<div class="row clearfix">
 
-			<!-- Feature Block One -->
-			<div class="feature-block_one">
-				<div class="feature-block_one-inner">
-					{{-- <a class="overlay-link" href="service-detail.html"></a> --}}
-					<span class="color-layer"></span>
-					<span class="feature-block_one-icon">
-						<img src="frontend/images/icons/service-2.png" alt="" />
-					</span>
-					<h5 class="feature-block_one-title">Cyber Security</h5>
-				</div>
-			</div>
-
-			<!-- Feature Block One -->
-			<div class="feature-block_one">
-				<div class="feature-block_one-inner">
-					<span class="color-layer"></span>
-					<span class="feature-block_one-icon">
-						<img src="frontend/images/icons/service-4.png" alt="" />
-					</span>
-					<h5 class="feature-block_one-title">Network</h5>
-				</div>
-			</div>
-
-			<!-- Feature Block One -->
-			<div class="feature-block_one">
-				<div class="feature-block_one-inner">
-					<span class="color-layer"></span>
-					<span class="feature-block_one-icon">
-						<img src="frontend/images/icons/service-5.png" alt="" />
-					</span>
-					<h5 class="feature-block_one-title">Project Manager</h5>
-				</div>
-			</div>
-
-			<!-- Feature Block One -->
-			<div class="feature-block_one">
-				<div class="feature-block_one-inner">
-					<span class="color-layer"></span>
-					<span class="feature-block_one-icon">
-						<img src="frontend/images/icons/service-3.png" alt="" />
-					</span>
-					<h5 class="feature-block_one-title">Software Developement</h5>
-				</div>
-			</div>
-
-			<!-- Feature Block One -->
-			<div class="feature-block_one">
-				<div class="feature-block_one-inner">
-					<span class="color-layer"></span>
-					<span class="feature-block_one-icon">
-						<img src="frontend/images/icons/service-7.png" alt="" />
-					</span>
-					<h5 class="feature-block_one-title">Artificial Intelligence</h5>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</section>
 <!-- End Featured One -->
 
 <!-- About Two -->

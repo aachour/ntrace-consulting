@@ -85,7 +85,7 @@
 <!-- End Main Slider -->
 
 <!-- Featured One -->
-<section class="featured-one">
+{{-- <section class="featured-one">
 	<div class="auto-container">
 		<div class="row clearfix">
 
@@ -146,7 +146,7 @@
 
 		</div>
 	</div>
-</section>
+</section> --}}
 <!-- End Featured One -->
 
 
