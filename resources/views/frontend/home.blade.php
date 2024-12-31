@@ -2,6 +2,19 @@
 
 @section('content')
 
+@if (session('success'))
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		Swal.fire({
+			title: 'Success!',
+			text: "{{ session('success') }}",
+			icon: 'success',
+			confirmButtonText: 'OK'
+		});
+	});
+</script>
+@endif
+
 
 <!-- Main Slider -->
 <section class="slider-two">
@@ -206,8 +219,7 @@
 						<span class="service-block_three-icon"><img src="frontend/images/icons/service-11.png"
 								alt="" /></span>
 						<h5 class="service-block_three-heading">Cyber Sécurité</h5>
-						<a class="service-block_three-learn" href="#" 
-							data-service="Cyber Sécurité"
+						<a class="service-block_three-learn" href="#" data-service="Cyber Sécurité"
 							data-description="Notre réseau d’experts en cybersécurité accompagne les entreprises dans l’implémentation et l’intégration de solutions de sécurité avancées, notamment :											
 							CyberArk
 							Wallix
@@ -219,8 +231,9 @@
 							SailPoint
 							Et d’autres solutions adaptées aux besoins spécifiques de nos clients.
 							Nos services visent à renforcer la sécurité, l’efficacité et la conformité des systèmes de gestion des identités,
-							tout en optimisant les processus d’accès et d’autorisation au sein des organisations et en assurant une réponse proactive et efficace face aux défis de la cybersécurité."
-							><h6>En savoir plus</h6></a>
+							tout en optimisant les processus d’accès et d’autorisation au sein des organisations et en assurant une réponse proactive et efficace face aux défis de la cybersécurité.">
+							En savoir plus
+						</a>
 					</div>
 				</div>
 
@@ -231,25 +244,16 @@
 						<span class="service-block_three-icon"><img src="frontend/images/icons/service-9.png"
 								alt="" /></span>
 						<h5 class="service-block_three-heading">Réseau</h5>
-						<div class="service-block_three-text">Nos services réseaux visent à fournir des solutions fiables.</div>
-						<div class="service-block_three-overlay">
-							<div class="service-block_three-color-layer"></div>
-							<span class="service-block_three-icon-two"><img src="frontend/images/icons/service-9-1.png"
-									alt="" /></span>
-							<h5 class="service-block_three-heading alternate">Réseau
-							</h5>
-							<a class="service-block_three-learn" href="#" 
-							data-service="Réseau"
+						<a class="service-block_three-learn" href="#" data-service="Réseau"
 							data-description="Nos services réseaux visent à fournir des solutions fiables, performantes et sécurisées pour répondre aux besoins croissants en connectivité et en communication des entreprises.
 											Nous intervenons dans les domaines suivants :
 											Conception et optimisation des réseaux : Analyse des besoins, mise en place d’architectures réseaux évolutives et optimisées pour garantir une connectivité fluide et performante.
 											Sécurité des réseaux : Mise en œuvre de pare-feu, VPN, segmentation réseau et autres mesures pour assurer la protection contre les menaces externes et internes.
 											Gestion et supervision des réseaux : Surveillance proactive, gestion des performances et résolution des incidents pour maintenir une disponibilité maximale.
 											Modernisation des infrastructures : Migration vers des technologies avancées comme les réseaux définis par logiciel (SDN) et l'intégration de solutions cloud pour une flexibilité accrue.
-											Nos experts sont engagés à accompagner les entreprises dans la transformation et la gestion de leurs infrastructures réseau, en garantissant des performances optimales et une sécurité renforcée."
-							>
-							Apprendre encore plus</a>
-						</div>
+											Nos experts sont engagés à accompagner les entreprises dans la transformation et la gestion de leurs infrastructures réseau, en garantissant des performances optimales et une sécurité renforcée.">
+							En savoir plus
+						</a>
 					</div>
 				</div>
 
@@ -259,25 +263,18 @@
 						<span class="service-block_three-icon"><img src="frontend/images/icons/service-10.png"
 								alt="" /></span>
 						<h5 class="service-block_three-heading">Chef de Projets</h5>
-						<div class="service-block_three-text">ONos chefs de projets expérimentés jouent un rôle clé dans la réussite.</div>
-						<div class="service-block_three-overlay">
-							<div class="service-block_three-color-layer"></div>
-							<span class="service-block_three-icon-two"><img src="frontend/images/icons/service-10-1.png"
-									alt="" /></span>
-							<h5 class="service-block_three-heading alternate">Chef de Projets</h5>
-									<a class="service-block_three-learn" href="#" 
-									data-service="Chef de Projets"
-									data-description="Nos chefs de projets expérimentés jouent un rôle clé dans la réussite des initiatives stratégiques et opérationnelles de nos clients.
+
+						<a class="service-block_three-learn" href="#" data-service="Chef de Projets" data-description="Nos chefs de projets expérimentés jouent un rôle clé dans la réussite des initiatives stratégiques et opérationnelles de nos clients.
 														Nous offrons des services de gestion de projets adaptés à vos besoins, notamment :
 														Planification et coordination : Élaboration de plans de projet détaillés, gestion des ressources et suivi des délais pour garantir une exécution fluide et efficace.
 														Gestion des parties prenantes : Coordination entre les équipes internes, les fournisseurs et les partenaires pour assurer une communication transparente et une collaboration optimale.
 														Suivi des performances : Mise en place d'indicateurs clés de performance (KPI) et d'outils de reporting pour suivre l’avancement des projets et garantir leur alignement avec les objectifs stratégiques.
 														Gestion des risques : Identification, évaluation et atténuation des risques pour minimiser les imprévus et optimiser les résultats.
 														Grâce à leur expertise et à leur maîtrise des méthodologies telles que Agile, Scrum, ou Waterfall, nos chefs de projets veillent à ce que chaque initiative soit menée à bien dans les délais impartis,
-														tout en respectant les budgets et les exigences de qualité."
-									>
-									Apprendre encore plus</a>
-						</div>
+														tout en respectant les budgets et les exigences de qualité.">
+							En savoir plus
+						</a>
+
 					</div>
 				</div>
 
@@ -288,16 +285,8 @@
 						<span class="service-block_three-icon"><img src="frontend/images/icons/service-8.png"
 								alt="" /></span>
 						<h5 class="service-block_three-heading">Développement Logiciel</h5>
-						<div class="service-block_three-text">Our customers get solutions and business opportunities
-							instead of just projects.</div>
-						<div class="service-block_three-overlay">
-							<div class="service-block_three-color-layer"></div>
-							<span class="service-block_three-icon-two"><img src="frontend/images/icons/service-8-1.png"
-									alt="" /></span>
-							<h5 class="service-block_three-heading alternate">Développement Logiciel</h5>
-									<a class="service-block_three-learn" href="#" 
-									data-service="Développement Logiciel"
-									data-description="Nos développeurs expérimentés, spécialisés dans les technologies JavaScript, offrent des solutions complètes pour répondre aux besoins de vos projets de développement logiciel.
+						<a class="service-block_three-learn" href="#" data-service="Développement Logiciel"
+							data-description="Nos développeurs expérimentés, spécialisés dans les technologies JavaScript, offrent des solutions complètes pour répondre aux besoins de vos projets de développement logiciel.
 														Nous proposons des services couvrant les domaines suivants :
 														Développement Front-end : Création d'interfaces utilisateur modernes, intuitives et réactives en utilisant des frameworks et bibliothèques reconnus tels que React.js, Angular, et Vue.js.
 														Nos développeurs front-end s’assurent de garantir une expérience utilisateur optimale et conforme aux dernières tendances en matière de design.
@@ -308,8 +297,9 @@
 														Expertise en JavaScript : Développement d'applications personnalisées, maintenance de solutions existantes, optimisation des performances et implémentation des meilleures pratiques dans l’ensemble des projets.
 														Nos développeurs s'engagent à fournir des solutions sur mesure, adaptées à vos besoins spécifiques, tout en respectant les délais et les exigences de qualité.
 														">
-									Apprendre encore plus</a>
-						</div>
+							En savoir plus
+						</a>
+
 					</div>
 				</div>
 
@@ -319,13 +309,7 @@
 						<span class="service-block_three-icon"><img src="frontend/images/icons/service-9.png"
 								alt="" /></span>
 						<h5 class="service-block_three-heading">Intelligence Artificielle (IA)</h5>
-						<div class="service-block_three-text">ONous offrons une expertise avancée dans le domaine de l’intelligence artificielle.</div>
-						<div class="service-block_three-overlay">
-							<div class="service-block_three-color-layer"></div>
-							<span class="service-block_three-icon-two"><img src="frontend/images/icons/service-9-1.png" alt="" /></span>
-							<h5 class="service-block_three-heading alternate">Intelligence Artificielle (IA)</h5>
-							<a class="service-block_three-learn" href="#" 
-							data-service="Intelligence Artificielle (IA)"
+						<a class="service-block_three-learn" href="#" data-service="Intelligence Artificielle (IA)"
 							data-description="Nous offrons une expertise avancée dans le domaine de l’intelligence artificielle pour aider nos clients à tirer parti de cette technologie transformative. Nos services incluent :
 												Modèles LLM (Large Language Models) : Développement et personnalisation de modèles de traitement du langage naturel à grande échelle pour répondre aux besoins spécifiques de vos applications.
 												Entraînement de modèles d’IA : Collecte et préparation des données, conception des architectures de modèles, et entraînement pour garantir des performances optimales dans divers cas d’utilisation.
@@ -334,8 +318,9 @@
 												Collection et gestion des données : Acquisition, nettoyage et structuration des données nécessaires à l'entraînement des modèles d’IA, tout en respectant les normes éthiques et réglementaires.
 												Notre équipe d’experts en IA s’engage à fournir des solutions innovantes et sur mesure, adaptées à vos objectifs stratégiques, tout en s’assurant que les technologies déployées sont robustes, éthiques et performantes.
 												">
-							Apprendre encore plus</a>
-						</div>
+							En savoir plus
+						</a>
+
 					</div>
 				</div>
 
@@ -351,8 +336,8 @@
 		</div>
 	</div>
 
-		<script>
-    document.addEventListener("DOMContentLoaded", () => {
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
         const modal = document.getElementById("service-modal");
         const modalTitle = document.getElementById("modal-title");
         const modalDescription = document.getElementById("modal-description");
@@ -384,7 +369,7 @@
             }
         });
     });
-</script>
+	</script>
 
 </section>
 <!-- End Services One -->

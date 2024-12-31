@@ -2,6 +2,19 @@
 
 @section('content')
 
+@if (session('success'))
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		Swal.fire({
+			title: 'Success!',
+			text: "{{ session('success') }}",
+			icon: 'success',
+			confirmButtonText: 'OK'
+		});
+	});
+</script>
+@endif
+
 <!-- Contact One -->
 <section class="contact-one" style="background-image:url(frontend/images/background/map-1.png)">
 	<div class="auto-container">

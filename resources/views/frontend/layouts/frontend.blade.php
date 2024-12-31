@@ -377,6 +377,7 @@
 		<script src="frontend/js/magnific-popup.min.js"></script>
 
 		<script src="frontend/js/script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 		<!--[if lt IE 9]><script src="frontend/js/respond.js"></script><![endif]-->
