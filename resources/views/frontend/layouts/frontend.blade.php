@@ -115,9 +115,9 @@
 										<button class="btn dropdown-toggle" type="button" id="dropdownMenu1"
 											data-bs-toggle="dropdown" aria-expanded="false">
 											<i class="fa-solid fa-globe fa-fw"></i>
-											@if (Route::currentRouteName() === 'home')
+											@if (Route::currentRouteName() === 'home' || Route::currentRouteName() === 'contact')
 											French
-											@elseif (Route::currentRouteName() === 'home-en')
+											@elseif (Route::currentRouteName() === 'home-en' || Route::currentRouteName() === 'contact-en')
 											English
 											@endif
 											&nbsp;<span class="fa fa-angle-down"></span>
@@ -126,7 +126,7 @@
 											<li>
 												<a href="{{ route('home') }}">
 													French
-													@if (Route::currentRouteName() === 'home')
+													@if (Route::currentRouteName() === 'home' || Route::currentRouteName() === 'contact')
 													<span class="active-indicator">(Active)</span>
 													@endif
 												</a>
@@ -134,7 +134,7 @@
 											<li>
 												<a href="{{ route('home-en') }}">
 													English
-													@if (Route::currentRouteName() === 'home-en')
+													@if (Route::currentRouteName() === 'home-en' || Route::currentRouteName() === 'contact-en')
 													<span class="active-indicator">(Active)</span>
 													@endif
 												</a>
@@ -285,12 +285,10 @@
 								<div class="footer-column col-4">
 									<div class="footer-widget logo-widget">
 										<div class="logo">
-											<a href="{{route('home')}}">
-												<img src="{{asset('frontend/images/logo-ntrace.png')}}" width="85%" />
-											</a>
+											<a href="{{route('home')}}"><img
+													src="{{asset('frontend/images/logo-ntrace.png')}}" alt="" width="80%" /></a>
 										</div>
-										<div class="text">We work with a passion of taking challenges and creating new
-											ones in advertising sector.</div>
+										<div class="text">Nous travaillons avec la passion de relever des défis et d'en créer de nouveaux dans le secteur de la publicité.</div>
 										{{-- <a href="#aboutUs" class="theme-btn about-btn">About us</a> --}}
 									</div>
 								</div>
@@ -298,16 +296,16 @@
 								<!-- Footer Column -->
 								<div class="footer-column col-8">
 									<div class="footer-widget newsletter-widget">
-										<h4>Newsletter</h4>
-										<div class="text">Subscribe our newsletter to get our latest update & news</div>
+										<h4>Bulletin</h4>
+										<div class="text">Abonnez-vous à notre newsletter pour recevoir nos dernières mises à jour et actualités</div>
 
-										<!-- Subscribe Box -->
+										<!-- Email Box -->
 										<div class="email-box">
 											<form method="post" action="{{ route('subscribe') }}" enctype="multipart/form-data">
 												@csrf
 												<div class="form-group">
 													<input wire:model="email" type="email" id="email" name="email"
-														placeholder="Your E-mail...">
+														placeholder="Votre E-mail...">
 													@error('email') <span class="text-danger">{{ $message }}</span>@enderror
 													<button id="form-submit" type="submit"><span class="icon fa-solid fa-paper-plane fa-fw"></span></button>
 												</div>
@@ -339,8 +337,8 @@
 
 				<div class="footer-bottom">
 					<div class="copyright">
-						Ntrace Consulting © @php echo date('Y'); @endphp. Tous Droits Réservés.
-						Conçu et Développé par <a href="https://binarycords.com" target="_blank">Binary Cords</a>
+						Ntrace Consulting © @php echo date('Y'); @endphp. All Rights Reserved.
+						Designed & Developed by <a href="https://binarycords.com" target="_blank">Binary Cords</a>
 					</div>
 				</div>
 

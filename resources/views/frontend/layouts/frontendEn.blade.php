@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>ntrace-consulting | Home</title>
+	<title>Ntrace-Consulting | Home</title>
 	<!-- Stylesheets -->
 	<link href="{{asset('frontend/css/bootstrap.css')}}" rel="stylesheet">
 	<link href="{{asset('frontend/css/style.css')}}" rel="stylesheet">
@@ -115,9 +115,9 @@
 										<button class="btn dropdown-toggle" type="button" id="dropdownMenu1"
 											data-bs-toggle="dropdown" aria-expanded="false">
 											<i class="fa-solid fa-globe fa-fw"></i>
-											@if (Route::currentRouteName() === 'home')
+											@if (Route::currentRouteName() === 'home' || Route::currentRouteName() === 'contact')
 											French
-											@elseif (Route::currentRouteName() === 'home-en')
+											@elseif (Route::currentRouteName() === 'home-en' || Route::currentRouteName() === 'contact-en')
 											English
 											@endif
 											&nbsp;<span class="fa fa-angle-down"></span>
@@ -126,7 +126,7 @@
 											<li>
 												<a href="{{ route('home') }}">
 													French
-													@if (Route::currentRouteName() === 'home')
+													@if (Route::currentRouteName() === 'home' || Route::currentRouteName() === 'contact')
 													<span class="active-indicator">(Active)</span>
 													@endif
 												</a>
@@ -134,7 +134,7 @@
 											<li>
 												<a href="{{ route('home-en') }}">
 													English
-													@if (Route::currentRouteName() === 'home-en')
+													@if (Route::currentRouteName() === 'home-en' || Route::currentRouteName() === 'contact-en')
 													<span class="active-indicator">(Active)</span>
 													@endif
 												</a>
@@ -202,9 +202,9 @@
 									<button class="btn dropdown-toggle" type="button" id="dropdownMenu1"
 										data-bs-toggle="dropdown" aria-expanded="false">
 										<i class="fa-solid fa-globe fa-fw"></i>
-										@if (Route::currentRouteName() === 'home')
+										@if (Route::currentRouteName() === 'home' || Route::currentRouteName() === 'contact')
 										French
-										@elseif (Route::currentRouteName() === 'home-en')
+										@elseif (Route::currentRouteName() === 'home-en' || Route::currentRouteName() === 'contact-en')
 										English
 										@endif
 										&nbsp;<span class="fa fa-angle-down"></span>
@@ -213,7 +213,7 @@
 										<li>
 											<a href="{{ route('home') }}">
 												French
-												@if (Route::currentRouteName() === 'home')
+												@if (Route::currentRouteName() === 'home' || Route::currentRouteName() === 'contact')
 												<span class="active-indicator">(Active)</span>
 												@endif
 											</a>
@@ -221,7 +221,7 @@
 										<li>
 											<a href="{{ route('home-en') }}">
 												English
-												@if (Route::currentRouteName() === 'home-en')
+												@if (Route::currentRouteName() === 'home-en' || Route::currentRouteName() === 'contact-en')
 												<span class="active-indicator">(Active)</span>
 												@endif
 											</a>
@@ -303,12 +303,13 @@
 
 										<!-- Email Box -->
 										<div class="email-box">
-											<form method="post" action="">
+											<form method="post" action="{{ route('subscribe') }}" enctype="multipart/form-data">
+												@csrf
 												<div class="form-group">
-													<input type="email" name="search-field" value=""
-														placeholder="Your mail address" required>
-													<button type="submit"><span
-															class="icon fa-solid fa-paper-plane fa-fw"></span></button>
+													<input wire:model="email" type="email" id="email" name="email"
+														placeholder="Your E-mail...">
+													@error('email') <span class="text-danger">{{ $message }}</span>@enderror
+													<button id="form-submit" type="submit"><span class="icon fa-solid fa-paper-plane fa-fw"></span></button>
 												</div>
 											</form>
 										</div>
