@@ -115,9 +115,11 @@
 										<button class="btn dropdown-toggle" type="button" id="dropdownMenu1"
 											data-bs-toggle="dropdown" aria-expanded="false">
 											<i class="fa-solid fa-globe fa-fw"></i>
-											@if (Route::currentRouteName() === 'home' || Route::currentRouteName() === 'contact')
+											@if (Route::currentRouteName() === 'home' || Route::currentRouteName() ===
+											'contact')
 											French
-											@elseif (Route::currentRouteName() === 'home-en' || Route::currentRouteName() === 'contact-en')
+											@elseif (Route::currentRouteName() === 'home-en' ||
+											Route::currentRouteName() === 'contact-en')
 											English
 											@endif
 											&nbsp;<span class="fa fa-angle-down"></span>
@@ -126,7 +128,8 @@
 											<li>
 												<a href="{{ route('home') }}">
 													French
-													@if (Route::currentRouteName() === 'home' || Route::currentRouteName() === 'contact')
+													@if (Route::currentRouteName() === 'home' ||
+													Route::currentRouteName() === 'contact')
 													<span class="active-indicator">(Active)</span>
 													@endif
 												</a>
@@ -134,7 +137,8 @@
 											<li>
 												<a href="{{ route('home-en') }}">
 													English
-													@if (Route::currentRouteName() === 'home-en' || Route::currentRouteName() === 'contact-en')
+													@if (Route::currentRouteName() === 'home-en' ||
+													Route::currentRouteName() === 'contact-en')
 													<span class="active-indicator">(Active)</span>
 													@endif
 												</a>
@@ -202,9 +206,11 @@
 									<button class="btn dropdown-toggle" type="button" id="dropdownMenu1"
 										data-bs-toggle="dropdown" aria-expanded="false">
 										<i class="fa-solid fa-globe fa-fw"></i>
-										@if (Route::currentRouteName() === 'home' || Route::currentRouteName() === 'contact')
+										@if (Route::currentRouteName() === 'home' || Route::currentRouteName() ===
+										'contact')
 										French
-										@elseif (Route::currentRouteName() === 'home-en' || Route::currentRouteName() === 'contact-en')
+										@elseif (Route::currentRouteName() === 'home-en' || Route::currentRouteName()
+										=== 'contact-en')
 										English
 										@endif
 										&nbsp;<span class="fa fa-angle-down"></span>
@@ -213,7 +219,8 @@
 										<li>
 											<a href="{{ route('home') }}">
 												French
-												@if (Route::currentRouteName() === 'home' || Route::currentRouteName() === 'contact')
+												@if (Route::currentRouteName() === 'home' || Route::currentRouteName()
+												=== 'contact')
 												<span class="active-indicator">(Active)</span>
 												@endif
 											</a>
@@ -221,7 +228,8 @@
 										<li>
 											<a href="{{ route('home-en') }}">
 												English
-												@if (Route::currentRouteName() === 'home-en' || Route::currentRouteName() === 'contact-en')
+												@if (Route::currentRouteName() === 'home-en' ||
+												Route::currentRouteName() === 'contact-en')
 												<span class="active-indicator">(Active)</span>
 												@endif
 											</a>
@@ -287,7 +295,8 @@
 									<div class="footer-widget logo-widget">
 										<div class="logo">
 											<a href="{{route('home')}}"><img
-													src="{{asset('frontend/images/logo-ntrace.png')}}" alt="" width="80%" /></a>
+													src="{{asset('frontend/images/logo-ntrace.png')}}" alt=""
+													width="80%" /></a>
 										</div>
 										<div class="text">We work with a passion of taking challenges and creating new
 											ones in advertising sector.</div>
@@ -303,13 +312,14 @@
 
 										<!-- Email Box -->
 										<div class="email-box">
-											<form method="post" action="{{ route('subscribe') }}" enctype="multipart/form-data">
+											<form id="subscribe-form" method="POST">
 												@csrf
 												<div class="form-group">
-													<input wire:model="email" type="email" id="email" name="email"
-														placeholder="Your E-mail...">
-													@error('email') <span class="text-danger">{{ $message }}</span>@enderror
-													<button id="form-submit" type="submit"><span class="icon fa-solid fa-paper-plane fa-fw"></span></button>
+													<input type="email" id="email" name="email"
+														placeholder="Your E-mail..." required>
+													<button id="form-submit" type="submit">
+														<span class="icon fa-solid fa-paper-plane fa-fw"></span>
+													</button>
 												</div>
 											</form>
 										</div>
@@ -372,8 +382,55 @@
 
 	<script src="{{asset('frontend/js/script.js')}}"></script>
 
-	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js')}}"></script><![endif]-->
-	<!--[if lt IE 9]><script src="{{asset('frontend/js/respond.js')}}"></script><![endif]-->
+	<script>
+		$(document).ready(function () {
+			$('#form-submit').on('click', function (e) {
+				e.preventDefault();
+
+				var form = $('#subscribe-form');
+				var formData = form.serialize(); 
+
+				var url = '{{ route('subscribe') }}'; 
+	
+
+				$.ajax({
+					url: url, 
+					type: 'POST',
+					data: formData,
+					success: function(response) {
+
+						Swal.fire({
+							icon: 'success',
+							title: 'Success!',
+							text: response.message,
+						}).then(() => {
+
+							window.location.href = '{{ route('home-en') }}'; 
+						});
+	
+						$('#email').val('');
+					},
+					error: function(xhr) {
+						if (xhr.status === 422) {
+							var errors = xhr.responseJSON.errors;
+							Swal.fire({
+								icon: 'error',
+								title: 'Validation Error',
+								text: errors.email ? errors.email[0] : 'Something went wrong.',
+							});
+						} else {
+							Swal.fire({
+								icon: 'error',
+								title: 'Error',
+								text: 'An unexpected error occurred. Please try again later.',
+							});
+						}
+					}
+				});
+			});
+		});
+	</script>
+
 
 </body>
 

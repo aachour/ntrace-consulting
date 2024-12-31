@@ -48,17 +48,8 @@ class HomeController extends Controller
             'status' => 0,
         ]);
 
-        // // Redirect to home with a success message
-        // if (request()->is('contact')) {
-        //     return redirect()->route('home')->with('success', 'Your message has been sent successfully.');
-        // }
-    
-        // // Check if the current path is '/en/contact'
-        // if (request()->is('contact-en')) {
-        //     return redirect('home-en')->with('success', 'Your message has been sent successfully.');
-        // }    
 
-        return redirect()->route('home')->with('success', 'Your message has been sent successfully.');
+        return response()->json(['message' => 'Your message has been sent successfully.'], 200);
 
     }
 
@@ -67,15 +58,12 @@ class HomeController extends Controller
         $validateData = $request->validate([
             'email' => 'required|email|max:255',
         ]);
-        
+    
         Subscription::create([
             'email' => $validateData['email'],
         ]);
-
-        return redirect()->route('home')->with('success', 'Thank you for your subscription'); 
+    
+        return response()->json(['message' => 'Thank you for your subscription'], 200);
     }
 
-
-
-    
 }

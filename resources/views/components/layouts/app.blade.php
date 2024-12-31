@@ -39,7 +39,7 @@
                                         Ntrace-Consulting © <?php echo date('Y'); ?>. All Rights Reserved.
                                     </div>
                                     <div>
-                                        Designed & Developed by <a href="#" target="_blank" class="fw-semibold"></a>
+                                        Designed & Developed by <a href="https://binarycords.com" target="_blank">Binary Cords</a>
                                     </div>
                                 </div>
                             </div>
