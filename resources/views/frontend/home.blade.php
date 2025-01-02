@@ -84,8 +84,13 @@
 </section>
 <!-- End Main Slider -->
 
+<<<<<<< HEAD
 <!-- Featured One 
 <section class="featured-one">
+=======
+<!-- Featured One -->
+{{-- <section class="featured-one">
+>>>>>>> 87d2daf15be7e8586a0e80eedc299758c4e8edb8
 	<div class="auto-container">
 		<div class="row clearfix">
 
@@ -141,7 +146,11 @@
 
 		</div>
 	</div>
+<<<<<<< HEAD
 </section>-->
+=======
+</section> --}}
+>>>>>>> 87d2daf15be7e8586a0e80eedc299758c4e8edb8
 <!-- End Featured One -->
 
 

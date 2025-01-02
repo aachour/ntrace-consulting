@@ -2,18 +2,7 @@
 
 @section('content')
 
-@if (session('success'))
-<script>
-	document.addEventListener('DOMContentLoaded', function () {
-		Swal.fire({
-			title: 'Success!',
-			text: "{{ session('success') }}",
-			icon: 'success',
-			confirmButtonText: 'OK'
-		});
-	});
-</script>
-@endif
+
 
 <!-- Main Slider -->
 <section class="slider-two">
@@ -83,6 +72,7 @@
 </section>
 <!-- End Main Slider -->
 
+<<<<<<< HEAD
 <!-- Featured One 
 <section class="featured-one">
 	<div class="auto-container">
@@ -142,6 +132,10 @@
 		</div>
 	</div>
 </section>-->
+=======
+<!-- Featured One -->
+
+>>>>>>> 87d2daf15be7e8586a0e80eedc299758c4e8edb8
 <!-- End Featured One -->
 
 <!-- About Two -->
