@@ -84,12 +84,11 @@
 </section>
 <!-- End Main Slider -->
 
-<!-- Featured One -->
+<!-- Featured One 
 <section class="featured-one">
 	<div class="auto-container">
 		<div class="row clearfix">
 
-			<!-- Feature Block One -->
 			<div class="feature-block_one">
 				<div class="feature-block_one-inner">
 					<span class="color-layer"></span>
@@ -100,7 +99,6 @@
 				</div>
 			</div>
 
-			<!-- Feature Block One -->
 			<div class="feature-block_one">
 				<div class="feature-block_one-inner">
 					<span class="color-layer"></span>
@@ -111,7 +109,6 @@
 				</div>
 			</div>
 
-			<!-- Feature Block One -->
 			<div class="feature-block_one">
 				<div class="feature-block_one-inner">
 					<span class="color-layer"></span>
@@ -122,7 +119,6 @@
 				</div>
 			</div>
 
-			<!-- Feature Block One -->
 			<div class="feature-block_one">
 				<div class="feature-block_one-inner">
 					<span class="color-layer"></span>
@@ -133,7 +129,6 @@
 				</div>
 			</div>
 
-			<!-- Feature Block One -->
 			<div class="feature-block_one">
 				<div class="feature-block_one-inner">
 					<span class="color-layer"></span>
@@ -146,7 +141,7 @@
 
 		</div>
 	</div>
-</section>
+</section>-->
 <!-- End Featured One -->
 
 
