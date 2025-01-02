@@ -349,8 +349,8 @@
 
 				<div class="footer-bottom">
 					<div class="copyright">
-						Ntrace Consulting © @php echo date('Y'); @endphp. All Rights Reserved.
-						Designed & Developed by <a href="https://binarycords.com" target="_blank">Binary Cords</a>
+						Ntrace Consulting © @php echo date('Y'); @endphp.
+						Conçu et Développé par <a href="https://binarycords.com" target="_blank">Binary Cords</a>
 					</div>
 				</div>
 

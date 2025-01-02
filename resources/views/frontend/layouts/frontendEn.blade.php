@@ -350,7 +350,7 @@
 
 				<div class="footer-bottom">
 					<div class="copyright">
-						Ntrace Consulting © @php echo date('Y'); @endphp. All Rights Reserved.
+						Ntrace Consulting © @php echo date('Y'); @endphp.
 						Designed & Developed by <a href="https://binarycords.com" target="_blank">Binary Cords</a>
 					</div>
 				</div>
