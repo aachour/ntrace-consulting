@@ -40,57 +40,12 @@
 			</div>
 		</div>
 
-		<!-- Slide -->
-		<div class="slide">
-			<div class="slider-two_image-layer" style="background-image:url(frontend/images/main-slider/2.jpg)"></div>
-			<div class="slider-two_pattern-layer"
-				style="background-image:url(frontend/images/main-slider/pattern-1.png)"></div>
-			<div class="auto-container">
-
-				<!-- Content Column -->
-				<div class="slider-two-content">
-					<div class="slider-two_inner">
-						<div class="slider-two_title">Nous sommes une solution d'affaires</div>
-						<h1 class="slider-two_heading">Prospérer dans ce marché de <br> financement volatil.</h1>
-						<div class="slider-two_text">Nous vous plaçons au centre des réseaux internationaux pour <br>
-							faire avancer vos intérêts stratégiques</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-		<!-- Slide -->
-		<div class="slide">
-			<div class="slider-two_image-layer" style="background-image:url(frontend/images/main-slider/2.jpg)"></div>
-			<div class="slider-two_pattern-layer"
-				style="background-image:url(frontend/images/main-slider/pattern-1.png)"></div>
-			<div class="auto-container">
-
-				<!-- Content Column -->
-				<div class="slider-two-content">
-					<div class="slider-two_inner">
-						<div class="slider-two_title">Nous sommes une solution d'affaires</div>
-						<h1 class="slider-two_heading">Prospérer dans ce marché de <br> financement volatil.</h1>
-						<div class="slider-two_text">Nous vous plaçons au centre des réseaux internationaux pour <br>
-							faire avancer vos intérêts stratégiques</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
 	</div>
 </section>
 <!-- End Main Slider -->
 
-<<<<<<< HEAD
 <!-- Featured One 
 <section class="featured-one">
-=======
-<!-- Featured One -->
-{{-- <section class="featured-one">
->>>>>>> 87d2daf15be7e8586a0e80eedc299758c4e8edb8
 	<div class="auto-container">
 		<div class="row clearfix">
 
@@ -146,11 +101,7 @@
 
 		</div>
 	</div>
-<<<<<<< HEAD
 </section>-->
-=======
-</section> --}}
->>>>>>> 87d2daf15be7e8586a0e80eedc299758c4e8edb8
 <!-- End Featured One -->
 
 
