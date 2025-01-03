@@ -804,7 +804,7 @@
 .header-style-two .logo{
 	width:240px;
 	height:auto;
-	padding:27px 0px;
+	padding:15px 0px;
 	max-width:inherit;
 	padding-right: 80px;
 	margin:var(--margin-zero);
@@ -831,18 +831,18 @@
     left: -800px;
     height: auto;
 	border-radius:0px;
-	-webkit-transform: skewX(25deg);
+	/* -webkit-transform: skewX(25deg);
     -moz-transform: skewX(25deg);
     -ms-transform: skewX(25deg);
     -o-transform: skewX(25deg);
-    transform: skewX(25deg);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#010333), to(#2642FF));
+    transform: skewX(25deg); */
+	/* background-image: -webkit-gradient(linear, left top, left bottom, from(#010333), to(#2642FF));
     background-image: -webkit-linear-gradient(to left, #010333, #2642FF);
     background-image: -moz-linear-gradient(to left, #010333, #2642FF);
     background-image: -ms-linear-gradient(to left, #010333, #2642FF);
     background-image: -o-linear-gradient(to left, #010333, #2642FF);
-    background-image: linear-gradient(to left, #010333, #2642FF);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#010333', endColorStr='#2642FF');
+    background-image: linear-gradient(to left, #010333, #2642FF); */
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#010333', endColorStr='#2642FF'); */
 }
 
 .header-style-two .logo:before{
@@ -853,7 +853,7 @@
     left: -800px;
     height: auto;
 	border-radius:0px;
-	-webkit-transform: skewX(25deg);
+	/* -webkit-transform: skewX(25deg);
     -moz-transform: skewX(25deg);
     -ms-transform: skewX(25deg);
     -o-transform: skewX(25deg);
@@ -864,7 +864,7 @@
     background-image: -ms-linear-gradient(to left, #010333, #2642FF);
     background-image: -o-linear-gradient(to left, #010333, #2642FF);
     background-image: linear-gradient(to left, #010333, #2642FF);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#010333', endColorStr='#2642FF');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#010333', endColorStr='#2642FF'); */
 }
 
 .header-style-two .logo:after{

@@ -65,8 +65,11 @@
 				<div class="auto-container">
 					<div class="inner-container d-flex">
 						<!-- Logo Box -->
-						<div class="logo"><a href="{{route('home')}}"><img src="frontend/images/logo-ntrace.png" alt=""
-									title=""></a></div>
+						<div class="logo">
+							<a href="{{route('home')}}">
+								<img src="frontend/images/logo-ntrace.png" alt="" title="">
+							</a>
+						</div>
 
 						<!-- Upper Right -->
 						<div class="upper-right">
