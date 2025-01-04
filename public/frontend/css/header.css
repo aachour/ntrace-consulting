@@ -233,6 +233,7 @@
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
+	padding-top:22px;
 }
 
 .main-header .main-menu .navbar-collapse{
@@ -802,7 +803,7 @@
 }
 
 .header-style-two .logo{
-	width:240px;
+	width:280px;
 	height:auto;
 	padding:15px 0px;
 	max-width:inherit;
@@ -1144,6 +1145,7 @@
 .header-style-two .header-upper{
 	position:relative;
 	padding:0px 0px;
+	overflow: hidden;
 }
 
 .header-style-two .header-lower .inner-container{
