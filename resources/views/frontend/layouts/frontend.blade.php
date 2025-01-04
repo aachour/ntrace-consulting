@@ -296,9 +296,9 @@
 								<div class="footer-column col-4">
 									<div class="footer-widget logo-widget">
 										<div class="logo">
-											<a href="{{route('home')}}"><img
-													src="{{asset('frontend/images/logo-ntrace-white.png')}}" alt=""
-													width="80%" /></a>
+											<a href="{{route('home')}}">
+												<img src="{{asset('frontend/images/logo-ntrace-white.png')}}" alt="" width="80%" />
+											</a>
 										</div>
 										<div class="text">Nous travaillons avec la passion de relever des défis et d'en
 											créer de nouveaux dans le secteur de la publicité.</div>

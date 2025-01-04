@@ -278,6 +278,7 @@
 	-o-transition:all 500ms ease;
 	background-color:var(--white-color);
 	box-shadow:0px 0px 10px rgba(0,0,0,0.10);
+	/* overflow:hidden; */
 }
 
 .main-header .sticky-header .mobile-nav-toggler{
@@ -810,6 +811,7 @@
 	padding-right: 80px;
 	margin:var(--margin-zero);
 	margin-right:70px;
+	overflow:hidden;
 }
 
 .header-style-two.fixed-header .logo{
@@ -820,6 +822,7 @@
 	max-width:inherit;
 	padding-right: 80px;
 	margin:var(--margin-zero);
+	overflow:hidden;
 }
 
 .header-style-two.fixed-header .logo:before{
@@ -1145,7 +1148,7 @@
 .header-style-two .header-upper{
 	position:relative;
 	padding:0px 0px;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .header-style-two .header-lower .inner-container{
@@ -2145,6 +2148,7 @@
 	border:none;
 	padding-left:var(--padding-zero);
 	margin-right:var(--margin-right-25);
+	margin-top:20px;
 }
 
 .header-style-two .outer-box .language button{
