@@ -30,10 +30,9 @@
 				<!-- Content Column -->
 				<div class="slider-two-content">
 					<div class="slider-two_inner">
-						<div class="slider-two_title">Nous sommes une solution d'affaires</div>
-						<h1 class="slider-two_heading">Prospérer dans ce marché de <br> financement volatil.</h1>
-						<div class="slider-two_text">Nous vous plaçons au centre des réseaux internationaux pour <br>
-							faire avancer vos intérêts stratégiques</div>
+						<!-- <div class="slider-two_title">Nous sommes une solution d'affaires</div> -->
+						<h1 class="slider-two_heading">Prospérer dans le marché dynamique des services informatiques</h1>
+						<div class="slider-two_text">We provide you with our international expertise to strengthen your digital projects.</div>
 					</div>
 				</div>
 
@@ -116,7 +115,7 @@
 				<div class="about-two_pattern-one"
 					style="background-image:url(frontend/images/background/pattern-12.png)"></div>
 				<div class="about-two_image">
-					<img src="frontend/images/resource/about-2.jpg" alt="" />
+					<img src="frontend/images/resource/about.png" alt="" />
 
 				</div>
 			</div>
@@ -125,9 +124,8 @@
 			<div class="about-two_content col-lg-6 col-md-12 col-sm-12">
 				<div class="about-two_content-inner">
 					<div class="sec-title_two">
-						<div class="sec-title_two-title">À propos de nous</div>
-						<h2 class="sec-title_two-heading">Choisissez <span>la meilleure</span> société de services <br>
-							informatiques</h2>
+						<!-- <div class="sec-title_two-title">À propos de nous</div> -->
+						<h2 class="sec-title_two-heading">Qui sommes nous</h2>
 					</div>
 					<div class="about-two_text">
 						Ntrace Consulting est née de l'idée de créer un réseau d'experts chevronnés ayant consacré leur
@@ -160,9 +158,8 @@
 
 		<!-- Sec Title -->
 		<div class="sec-title_two centered">
-			<div class="sec-title_two-title">~ Domaines d'expertise ~</div>
-			<h2 class="sec-title_two-heading">Choisissez <span>la meilleure</span> société de services <br>
-				informatiques</h2>
+			<!-- <div class="sec-title_two-title">~ Domaines d'expertise ~</div> -->
+			<h2 class="sec-title_two-heading">Nos domaines d’expertises</h2>
 		</div>
 
 		<div class="services-one_inner-coontainer">

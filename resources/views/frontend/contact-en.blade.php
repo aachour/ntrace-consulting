@@ -22,13 +22,12 @@
 		<div class="sec-title">
 			<div class="d-flex justify-content-between align-items-center flex-wrap">
 				<div class="left-box">
-					<div class="sec-title_title">Contact us</div>
-					<h2 class="sec-title_heading">Grow Your Business With <br> <span>Our Expertise</span></h2>
+					<!-- <div class="sec-title_title">Contact us</div> -->
+					<h2 class="sec-title_heading">Contact Us</h2>
 				</div>
-				<div class="right-box">
-					<div class="sec-title_text">The perfect blend of mature processes, flexible delivery <br> models,
-						effective project management.</div>
-				</div>
+				<!-- <div class="right-box">
+					<div class="sec-title_text">The perfect blend of mature processes, flexible delivery <br> models,effective project management.</div>
+				</div> -->
 			</div>
 		</div>
 		<div class="row clearfix">
@@ -42,7 +41,7 @@
 						<div class="block-inner">
 							<span class="icon"><img src="/frontend/images/icons/contact-1.png" alt="" /></span>
 							<strong>Office address</strong>
-							Digital Agency Network 20 Eastbourne Terrace London W2 6LG
+							8 Rue Gerard Sevault,<br />78570 Chanteloup-les-vignes
 						</div>
 					</div>
 
@@ -50,8 +49,8 @@
 					<div class="contact-block">
 						<div class="block-inner">
 							<span class="icon"><img src="/frontend/images/icons/contact-2.png" alt="" /></span>
-							<strong>Telephone number</strong>
-							(408) 389-5470 <br> (408) 456-5470
+							<strong>Phone number</strong>
+							+33 6 62 54 45 33
 						</div>
 					</div>
 
@@ -59,8 +58,8 @@
 					<div class="contact-block">
 						<div class="block-inner">
 							<span class="icon"><img src="/frontend/images/icons/contact-3.png" alt="" /></span>
-							<strong>Mail address</strong>
-							help@envato.com <br> help@support.com
+							<strong>Email address</strong>
+							servicecommercial@ntrace-consulting.com
 						</div>
 					</div>
 
@@ -133,7 +132,7 @@
 <section class="map-one">
 	<div class="map-outer">
 		<iframe
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.3839261151554!2d35.4992537153429!3d33.893791680654245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f1709bc836f69%3A0x1f8c33b28ec07e7e!2sBeirut%2C%20Lebanon!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.5518195785844!2d2.0329465!3d48.9747808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e68b9a3ac692dd%3A0xd0677b303832ad42!2s8%20Rue%20d&#39;Andr%C3%A9sy%2C%2078570%20Chanteloup-les-Vignes%2C%20France!5e1!3m2!1sen!2slb!4v1736072398865!5m2!1sen!2slb"
 			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
 			referrerpolicy="no-referrer-when-downgrade">
 		</iframe>

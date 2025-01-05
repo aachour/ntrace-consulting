@@ -291,22 +291,22 @@
 							<div class="row clearfix">
 
 								<!-- Footer Column -->
-								<div class="footer-column col-4">
+								<div class="footer-column col-lg-6 col-12">
 									<div class="footer-widget logo-widget">
 										<div class="logo">
 											<a href="{{route('home')}}">
-												<img src="{{asset('frontend/images/logo-ntrace-white.png')}}" alt="" width="80%" />
+												<img src="{{asset('frontend/images/logo-ntrace-white.png')}}" class="onlyDesktop" width="50%" />
+												<img src="{{asset('frontend/images/logo-ntrace-white.png')}}" class="onlyMobile" width="100%" />
 											</a>
 										</div>
-										<div class="text">We work with a passion of taking challenges and creating new
-											ones in advertising sector.</div>
+										<div class="text">Ntrace Consulting is a services company specializing in information technology. We offer in-depth expertise and innovative solutions to support our clients in their digital transformation, the optimization of their business processes and the securing of their IT infrastructures.</div>
 										{{-- <a href="#aboutUs" class="theme-btn about-btn">About us</a> --}}
 									</div>
 								</div>
 
 								<!-- Footer Column -->
-								<div class="footer-column col-8">
-									<div class="footer-widget newsletter-widget">
+								<div class="footer-column col-lg-6 col-12">
+									<div class="footer-widget newsletter-widget" style="margin-top:80px;">
 										<h4>Newsletter</h4>
 										<div class="text">Subscribe our newsletter to get our latest update & news</div>
 
@@ -325,7 +325,7 @@
 										</div>
 
 										<!-- Social Box -->
-										<ul class="social-box">
+										<!-- <ul class="social-box">
 											<li><a href="https://www.facebook.com/"
 													class="fa-brands fa-facebook-f fa-fw"></a></li>
 											<li><a href="https://www.twitter.com/"
@@ -334,7 +334,7 @@
 											</li>
 											<li><a href="https://behance.com/" class="fa-solid fa-behance fa-fw"></a>
 											</li>
-										</ul>
+										</ul> -->
 										<!-- End Social Box -->
 
 									</div>

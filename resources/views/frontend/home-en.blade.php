@@ -18,8 +18,8 @@
 				<!-- Content Column -->
 				<div class="slider-two-content">
 					<div class="slider-two_inner">
-						<div class="slider-two_title">We are Business Solution</div>
-						<h1 class="slider-two_heading">Prosper in this volatile <br> market funding.</h1>
+						<!-- <div class="slider-two_title">We are Business Solution</div> -->
+						<h1 class="slider-two_heading">Thriving in the Dynamic IT Services Market</h1>
 						<div class="slider-two_text">We place you at the centre of international networks to <br>
 							advance your strategic interests</div>
 					</div>
@@ -103,7 +103,7 @@
 				<div class="about-two_pattern-one"
 					style="background-image:url(frontend/images/background/pattern-12.png)"></div>
 				<div class="about-two_image">
-					<img src="frontend/images/resource/about-2.jpg" alt="" />
+					<img src="frontend/images/resource/about.png" alt="" />
 				</div>
 			</div>
 
@@ -111,8 +111,8 @@
 			<div class="about-two_content col-lg-6 col-md-12 col-sm-12">
 				<div class="about-two_content-inner">
 					<div class="sec-title_two">
-						<div class="sec-title_two-title">About Our Company</div>
-						<h2 class="sec-title_two-heading">Choose <span>The Best</span> IT <br> Service Company</h2>
+						<!-- <div class="sec-title_two-title">About Our Company</div> -->
+						<h2 class="sec-title_two-heading">Who are we</h2>
 					</div>
 					<div class="about-two_text">
 						Ntrace Consulting was born from the idea of ​​creating a network of seasoned experts who have
@@ -143,8 +143,8 @@
 
 		<!-- Sec Title -->
 		<div class="sec-title_two centered">
-			<div class="sec-title_two-title">~ Our Awesome Services ~</div>
-			<h2 class="sec-title_two-heading">Choose <span>The Best</span> IT <br> Service Company</h2>
+			<!-- <div class="sec-title_two-title">~ Our Awesome Services ~</div> -->
+			<h2 class="sec-title_two-heading">Our areas of expertise</h2>
 		</div>
 
 		<div class="services-one_inner-coontainer">

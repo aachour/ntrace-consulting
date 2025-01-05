@@ -9030,3 +9030,20 @@ button.modal-action:hover {
 	background-image: -webkit-linear-gradient(left, #0c65f8 0%, #1229ba 100%);
 	background-image: linear-gradient(to right, #0c65f8 0%, #1229ba 100%);
 }
+
+@media(max-width:900px){
+	.onlyMobile{
+		display:block !important;
+	}
+	.onlyDesktop{
+		display:none !important;
+	}
+}
+@media(min-width:900px){
+	.onlyMobile{
+		display:none !important;
+	}
+	.onlyDesktop{
+		display:block !important;
+	}
+}
