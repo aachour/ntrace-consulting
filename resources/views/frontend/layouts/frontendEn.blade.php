@@ -295,8 +295,7 @@
 									<div class="footer-widget logo-widget">
 										<div class="logo">
 											<a href="{{route('home')}}">
-												<img src="{{asset('frontend/images/logo-ntrace-white.png')}}" class="onlyDesktop" width="50%" />
-												<img src="{{asset('frontend/images/logo-ntrace-white.png')}}" class="onlyMobile" width="100%" />
+												<img src="{{asset('frontend/images/logo-ntrace-white.png')}}" width="50%" />
 											</a>
 										</div>
 										<div class="text">Ntrace Consulting is a services company specializing in information technology. We offer in-depth expertise and innovative solutions to support our clients in their digital transformation, the optimization of their business processes and the securing of their IT infrastructures.</div>

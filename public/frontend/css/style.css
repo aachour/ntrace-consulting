@@ -9031,7 +9031,7 @@ button.modal-action:hover {
 	background-image: linear-gradient(to right, #0c65f8 0%, #1229ba 100%);
 }
 
-@media(max-width:900px){
+/* @media(max-width:900px){
 	.onlyMobile{
 		display:block !important;
 	}
@@ -9046,4 +9046,4 @@ button.modal-action:hover {
 	.onlyDesktop{
 		display:block !important;
 	}
-}
+} */
