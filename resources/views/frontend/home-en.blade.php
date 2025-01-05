@@ -20,8 +20,7 @@
 					<div class="slider-two_inner">
 						<!-- <div class="slider-two_title">We are Business Solution</div> -->
 						<h1 class="slider-two_heading">Thriving in the Dynamic IT Services Market</h1>
-						<div class="slider-two_text">We place you at the centre of international networks to <br>
-							advance your strategic interests</div>
+						<div class="slider-two_text">We provide you with our international expertise to strengthen your digital projects.</div>
 					</div>
 				</div>
 

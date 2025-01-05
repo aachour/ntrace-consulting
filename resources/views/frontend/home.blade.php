@@ -32,7 +32,7 @@
 					<div class="slider-two_inner">
 						<!-- <div class="slider-two_title">Nous sommes une solution d'affaires</div> -->
 						<h1 class="slider-two_heading">Prospérer dans le marché dynamique des services informatiques</h1>
-						<div class="slider-two_text">We provide you with our international expertise to strengthen your digital projects.</div>
+						<div class="slider-two_text">Nous mettons à votre disposition notre expertise internationale pour renforcer vos projets numériques.</div>
 					</div>
 				</div>
 
