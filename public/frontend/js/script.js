@@ -54,7 +54,16 @@
 		});
 		
 	}
-	
+
+
+	$(document).ready(function() {
+		$(document).on('click', '.section', function() {
+			$('body').removeClass('mobile-menu-visible');
+			$('.mobile-menu .navigation > li').removeClass('open');
+			$('.mobile-menu .navigation li ul').slideUp(0);			
+		})
+	})
+
 	
 	// Add Current Class Auto
 	function dynamicCurrentMenuClass(selector) {

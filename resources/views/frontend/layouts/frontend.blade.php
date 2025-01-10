@@ -100,8 +100,8 @@
 										<ul class="navigation clearfix">
 											<li class="{{ request()->is('/') ? " current" : "" }}"><a
 													href="{{route('home')}}">Page d'accueil</a></li>
-											<li class=""><a href="#aboutUs">À Propos De Nous</a></li>
-											<li class=""><a href="#services">Domaines d'expertise</a></li>
+											<li><a  class="section" href="#aboutUs">À Propos De Nous</a></li>
+											<li><a  class="section" href="#services">Domaines d'expertise</a></li>
 											<li class="{{ request()->is('contact*') ? " current" : "" }}"><a
 													href="{{route('contact')}}">Contactez-nous</a></li>
 										</ul>

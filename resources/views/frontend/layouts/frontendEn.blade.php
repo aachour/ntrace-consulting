@@ -97,8 +97,8 @@
 										<ul class="navigation clearfix">
 											<li class="{{ request()->is('en') ? " current" : "" }}"><a
 													href="{{route('home-en')}}">Home</a></li>
-											<li class=""><a href="#aboutUs">About Us</a></li>
-											<li class=""><a href="#services">Expertise</a></li>
+											<li><a class="section" href="#aboutUs">About Us</a></li>
+											<li><a class="section" href="#services">Expertise</a></li>
 											<li class="{{ request()->is('en/contact*') ? " current" : "" }}"><a
 													href="{{route('contact-en')}}">Contact Us</a></li>
 										</ul>
