@@ -2,8 +2,6 @@
 
 @section('content')
 
-
-
 <!-- Main Slider -->
 <section class="slider-two">
 	<div class="single-item-carousel owl-carousel owl-theme">

@@ -3,7 +3,16 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Ntrace-Consulting | Home</title>
+	
+	<title>{{$pageTitle}}</title>
+	
+	<meta name="description" content="{{ $metaDescription }}">
+    <meta property="og:title" content="{{ $metaTitle}}">
+    <meta property="og:description" content="{{ $metaDescription }}">
+    <meta property="og:image" content="{{ asset('frontend/images/logo-ntrace.png') }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ $pageUrl }}">
+	
 	<!-- Stylesheets -->
 	<link href="{{asset('frontend/css/bootstrap.css')}}" rel="stylesheet">
 	<link href="{{asset('frontend/css/style.css')}}" rel="stylesheet">

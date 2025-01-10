@@ -9,23 +9,39 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function home()
-    {
-        return view('frontend.home');
+    {   
+        $pageTitle="Accueil | Ntrace Consulting";
+        $pageUrl="https://ntrace-consulting.com/";
+        $metaTitle="Prospérer dans le marché dynamique des services informatiques";
+        $metaDescription="Nous mettons à votre disposition notre expertise internationale pour renforcer vos projets numériques.";
+        return view('frontend.home' , compact('pageTitle' , 'pageUrl' , 'metaTitle' , 'metaDescription'));
     }
 
     public function homeEn()
     {
-        return view('frontend.home-en');
+        $pageTitle="Home | Ntrace Consulting";
+        $pageUrl="https://ntrace-consulting.com/en";
+        $metaTitle="Thriving in the Dynamic IT Services Market";
+        $metaDescription="We provide you with our international expertise to strengthen your digital projects.";
+        return view('frontend.home-en', compact('pageTitle' , 'pageUrl' , 'metaTitle' , 'metaDescription'));
     }
 
     public function contact()
     {
-        return view('frontend.contact');
+        $pageTitle="Contactez-Nous | Ntrace Consulting";
+        $pageUrl="https://ntrace-consulting.com/contact";
+        $metaTitle="Contactez-Nous";
+        $metaDescription="Nous mettons à votre disposition notre expertise internationale pour renforcer vos projets numériques.";
+        return view('frontend.contact', compact('pageTitle' , 'pageUrl' , 'metaTitle' , 'metaDescription'));
     }
 
     public function contactEn()
     {
-        return view('frontend.contact-en');
+        $pageTitle="Contact Us | Ntrace Consulting";
+        $pageUrl="https://ntrace-consulting.com/en/contact";
+        $metaTitle="Contact Us";
+        $metaDescription="We provide you with our international expertise to strengthen your digital projects.";
+        return view('frontend.contact-en', compact('pageTitle' , 'pageUrl' , 'metaTitle' , 'metaDescription'));
     }
 
     public function submitForm(Request $request)
