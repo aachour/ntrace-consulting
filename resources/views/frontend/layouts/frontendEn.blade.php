@@ -12,7 +12,7 @@
     <meta property="og:image" content="{{ asset('frontend/images/logo-ntrace.png') }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ $pageUrl }}">
-	
+
 	<!-- Stylesheets -->
 	<link href="{{asset('frontend/css/bootstrap.css')}}" rel="stylesheet">
 	<link href="{{asset('frontend/css/style.css')}}" rel="stylesheet">
@@ -33,6 +33,18 @@
 	<!-- Responsive -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DSEBVF7T9S"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-DSEBVF7T9S');
+	</script>
+
 
 </head>
 
