@@ -214,7 +214,7 @@
 					<div class="service-block_three-inner">
 						<span class="service-block_three-icon"><img src="frontend/images/icons/service-10.png"
 								alt="" /></span>
-						<h5 class="service-block_three-heading">Chef de Projets</h5>
+						<h5 class="service-block_three-heading">Gestion des Projets</h5>
 
 						<a class="service-block_three-learn" href="#" data-service="Chef de Projets" data-description="Nos chefs de projets expérimentés jouent un rôle clé dans la réussite des initiatives stratégiques et opérationnelles de nos clients.
 														Nous offrons des services de gestion de projets adaptés à vos besoins, notamment :
