@@ -41,7 +41,9 @@
 						<div class="block-inner">
 							<span class="icon"><img src="/frontend/images/icons/contact-1.png" alt="" /></span>
 							<strong>Office address</strong>
-							8 Rue Gerard Sevault,<br />78570 Chanteloup-les-vignes
+							Chez stop & work
+							<br />5 Avenue Carnot, 91300 Massy
+							<!-- 8 Rue Gerard Sevault,<br />78570 Chanteloup-les-vignes -->
 						</div>
 					</div>
 
